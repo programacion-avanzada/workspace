@@ -1,4 +1,4 @@
-package computandoPatentes;
+package edu.unlam.progava.computandoPatentes;
 
 public abstract class Conversor {
 	protected final int VALOR_NUMERO_A_CHAR = 48;
@@ -12,18 +12,24 @@ public abstract class Conversor {
 	protected final int LETRAS3 = LETRAS2 * LETRAS;
 	protected final int NUMEROS2 = NUMEROS * NUMEROS;
 	protected final int NUMEROS3 = NUMEROS2 * NUMEROS;
+	
+	protected Patente patente;
 
+	public Conversor(Patente patente) {
+		this.patente = patente;
+	}
+	
 	public static Conversor getConversor(Patente patente) {
 		Conversor conversor;
 		if (patente.valor.length() == 6) {
-			conversor = new Conversor1995();
+			conversor = new Conversor1995(patente);
 		} else {
-			conversor = new Conversor2016();
+			conversor = new Conversor2016(patente);
 		}
 		return conversor;
 	}
 
-	protected abstract long getNumero(Patente patente);
+	protected abstract long getNumero();
 
-	protected abstract String getPatente(long n);
+	protected abstract Patente getPatenteSiguiente(long n);
 }
