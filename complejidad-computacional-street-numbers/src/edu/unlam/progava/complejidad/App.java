@@ -31,8 +31,9 @@ public class App {
 			}
 		}
 
+		long tiempoFinal = System.nanoTime();
 		System.out.println("Estrategia utilizada: " + numbers.getEstrategia());
-		System.out.println("Reporte de tiempo: " + (System.nanoTime() - tiempoInicio) / 1e6 + " ms");
+		System.out.println("Reporte de tiempo: " + (tiempoFinal - tiempoInicio) / 1e6 + " ms");
 		System.out.println("Resultados: ");
 		for (Tupla<Integer, Integer> alturaYUltimo : resultados) {
 			System.out.println("\t" + alturaYUltimo);
