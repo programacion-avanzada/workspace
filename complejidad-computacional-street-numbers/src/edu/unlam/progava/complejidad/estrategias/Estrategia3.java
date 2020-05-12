@@ -8,9 +8,8 @@ public class Estrategia3 implements StreetNumbersStrategy {
 			return -1;
 		}
 
-		double i = Math.sqrt((Math.pow(ultimoNumero, 2) + ultimoNumero) / 2);
-		int entera = (int) i;
-		if ((i - entera) == 0) {
+		double i = Math.sqrt((ultimoNumero * ultimoNumero + ultimoNumero) / 2);
+		if ((i % 1) == 0) {
 			return (int) i;
 		}
 

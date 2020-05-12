@@ -11,8 +11,9 @@ public class Estrategia2 implements StreetNumbersStrategy {
 		for (int i = 1; i <= ultimoNumero; i++) {
 			int sumaIzquierda = i * (i - 1) / 2;
 			int sumaDerecha = (ultimoNumero * (ultimoNumero + 1) / 2 - i * (i + 1) / 2);
-			if (sumaDerecha == sumaIzquierda)
+			if (sumaDerecha == sumaIzquierda) {
 				return i;
+			}
 
 		}
 		return -1;
