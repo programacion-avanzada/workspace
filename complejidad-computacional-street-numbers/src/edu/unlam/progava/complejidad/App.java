@@ -6,6 +6,9 @@ import java.util.List;
 import edu.unlam.progava.complejidad.estrategias.*;
 import edu.unlam.progava.complejidad.utils.Tupla;
 
+/**
+ * Probando Git en Eclipse.
+ */
 public class App {
 
 	public static void main(String[] args) {
