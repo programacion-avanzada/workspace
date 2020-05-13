@@ -1,4 +1,6 @@
-package edu.unlam.progava.complejidadComputacional;
+package edu.unlam.progava.ordenamiento;
+
+import edu.unlam.progava.ordenamiento.elementales.PorSeleccion;
 
 public class Ordenadora<T extends Comparable<T>> {
 

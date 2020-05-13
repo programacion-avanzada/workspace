@@ -1,4 +1,4 @@
-package edu.unlam.progava.complejidadComputacional;
+package edu.unlam.progava.ordenamiento;
 
 public abstract class Estrategia<T extends Comparable<T>> {
 

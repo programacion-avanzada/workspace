@@ -1,6 +1,8 @@
-package edu.unlam.progava.complejidadComputacional;
+package edu.unlam.progava.ordenamiento.elementales;
 
 import java.util.Arrays;
+
+import edu.unlam.progava.ordenamiento.Estrategia;
 
 public class PorInsercion<T extends Comparable<T>> extends Estrategia<T> {
 
