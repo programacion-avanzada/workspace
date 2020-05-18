@@ -4,14 +4,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import chainOfResponsibility.Default;
-import chainOfResponsibility.Multiplicar;
-import chainOfResponsibility.Operacion;
-import chainOfResponsibility.Pedido;
-import chainOfResponsibility.Restar;
-import chainOfResponsibility.SumaYMultiplicacion;
-import chainOfResponsibility.Sumar;
-
 public class ChainOfResponsibilityTests {
 	Operacion operacion;
 	
