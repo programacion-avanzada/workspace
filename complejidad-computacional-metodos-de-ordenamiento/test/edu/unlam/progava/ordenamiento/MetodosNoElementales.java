@@ -3,11 +3,11 @@ package edu.unlam.progava.ordenamiento;
 import org.junit.Assert;
 import org.junit.Test;
 
-import edu.unlam.progava.ordenamiento.elementales.PorBurbujeo;
-import edu.unlam.progava.ordenamiento.elementales.PorInsercion;
-import edu.unlam.progava.ordenamiento.elementales.PorSeleccion;
+import edu.unlam.progava.ordenamiento.noElementales.PorMergeSort;
+import edu.unlam.progava.ordenamiento.noElementales.PorQuickSort;
+import edu.unlam.progava.ordenamiento.noElementales.PorShellSort;
 
-public class MetodosElementales {
+public class MetodosNoElementales {
 
 	@Test
 	public void pruebaAleatorios() {
@@ -38,9 +38,9 @@ public class MetodosElementales {
 		Ordenadora<Integer> ordenadora = new Ordenadora<Integer>();
 
 		Estrategia[] estrategias = { 
-			new PorSeleccion<Integer>(),
-			new PorBurbujeo<Integer>(),
-			new PorInsercion<Integer>()
+			new PorQuickSort<Integer>(),
+			new PorMergeSort<Integer>(),
+			new PorShellSort<Integer>()
 		};
 
 		for (Estrategia<Integer> estrategia : estrategias) {
