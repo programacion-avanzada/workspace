@@ -24,7 +24,7 @@ public class App {
 		List<Tupla<Integer, Integer>> resultados = new LinkedList<Tupla<Integer, Integer>>();
 		int altura;
 		long tiempoInicio = System.nanoTime();
-		for (int ultimoNumero = 1; ultimoNumero < Integer.MAX_VALUE && resultados.size() < 4; ultimoNumero++) {
+		for (int ultimoNumero = 1; ultimoNumero < Integer.MAX_VALUE && resultados.size() < 5; ultimoNumero++) {
 			altura = numbers.alturaDeLaCasa(ultimoNumero);
 			if (altura != -1) {
 				resultados.add(new Tupla<Integer, Integer>(altura, ultimoNumero));
@@ -39,5 +39,4 @@ public class App {
 			System.out.println("\t" + alturaYUltimo);
 		}
 	}
-
 }
