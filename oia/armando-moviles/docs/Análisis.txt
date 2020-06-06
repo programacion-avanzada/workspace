@@ -1,0 +1,52 @@
+Un móvil está compuesto por tres partes:
+-Varillas.
+-Colgantes.
+-Hilo.
+
+Un móvil está compuesto por una varilla que cuelga por el punto medio y de sus extremos cuelgan 
+sendos colgantes.
+
+Hay sólo un requisito para que un móvil quede bien: Los pesos colgados de cada extremo deben ser iguales. 
+
+El artesano prepara de antemano las varillas con sus "enganches" para los hilos(dos a los extremos, 
+uno en el punto medio), y los colgantes (en general blancos y negros que son los mejores para
+despertar la creatividad de los chicos), luego pesa los colgantes, confeccionando una tabla.
+
+Objetivo: Determinar la mayor cantidad de móviles que se puede realizar e informes su peso total y 
+la cantidad de varillas necesarias para construirlos.
+
+
+Entrada-> colgantes.in
+
+- Una línea con la cantidad de colgantes (0<=C<=1000).
+
+- C líneas con el peso de cada colgante (1<= PC <= 100).
+
+Ejemplo
+
+6
+4
+3 *
+1 #   
+2
+3 *
+1 # 
+
+
+Salida -> colgantes.out
+
+Una única línea con dos aleternativas:
+
+- No se puede construir ningún móvil con los elementos disponibles.
+
+- El peso total de los móviles y el número de varillas necesarias.
+
+Ejemplo para la entrada
+
+8 2
+
+8 = (3 + 3) + (1 + 1)
+       1    +     1  = 2 varillas.
+
+
+
