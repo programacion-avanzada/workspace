@@ -1,0 +1,32 @@
+@startuml
+package "olivares" {
+	Partido "1" o-- "*" Lanzamiento: -lanzamientos
+	package "estrategias" {
+		Estrategia <|-- Cuadratica
+		Estrategia <|-- Lineal
+	}
+	Partido o-- Estrategia: -estrategia
+}
+
+class Lanzamiento {
+	-x: int
+	-y: int
+	+esFavorable(): boolean
+	+getDistancia(): double
+}
+class Partido {
+	+agregar(lanzamiento: Lanzamiento): boolean
+	+setEstrategia(estrategia: Estrategia): void
+	+obtenerMejorR2(): int
+}
+abstract class Estrategia {
+	{abstract} +obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
+	#getDistanciaMaxima(lanzamientos: List<Lanzamiento>): double
+}
+class Lineal {
+	+obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
+}
+class Cuadratica {
+	+obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
+}
+@enduml
