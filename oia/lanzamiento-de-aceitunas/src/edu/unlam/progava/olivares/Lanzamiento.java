@@ -2,11 +2,12 @@ package edu.unlam.progava.olivares;
 
 public class Lanzamiento {
 
-	private int x, y;
+	private int x;
+	private int y;
 
 	public Lanzamiento(int x, int y) {
 		if (x == 0) {
-			throw new RuntimeException("Dato no válido, caso improcesable");
+			throw new LanzamientoNoValido("No puede aterrizar sobre la red");
 		}
 		this.x = x;
 		this.y = y;

@@ -1,4 +1,9 @@
 @startuml
+
+package "java.lang" {
+	class RuntimeException
+}
+
 package "olivares" {
 	Partido "1" o-- "*" Lanzamiento: -lanzamientos
 	package "estrategias" {
@@ -6,6 +11,7 @@ package "olivares" {
 		Estrategia <|-- Lineal
 	}
 	Partido o-- Estrategia: -estrategia
+	RuntimeException <|-- LanzamientoNoValido
 }
 
 class Lanzamiento {

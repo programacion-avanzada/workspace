@@ -13,7 +13,7 @@ public class EnunciadoTests {
 	private Partido partido;
 
 	@Before
-	public void setup() {
+	public void setUp() {
 		partido = new Partido();
 
 		partido.agregar(new Lanzamiento(9, 3));
