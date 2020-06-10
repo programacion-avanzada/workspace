@@ -22,5 +22,4 @@ public class Partido {
 	public void setEstrategia(Estrategia estrategia) {
 		this.estrategia = estrategia;
 	}
-
 }

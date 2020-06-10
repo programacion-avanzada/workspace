@@ -19,5 +19,4 @@ public class Lanzamiento {
 	public boolean esFavorable() {
 		return this.x > 0;
 	}
-
 }
