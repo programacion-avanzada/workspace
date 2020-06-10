@@ -23,39 +23,19 @@ public class Artesano {
 		return pesoTotal;
 	}
 
-	public void verificarVehiculo(int clave, int pesoLeido) {
-
+	public void construirMovil(int peso) {
 		// ¿Existe el peso en el mapa?
-		if (colgantes.containsValue(pesoLeido) == true) {
+		if (colgantes.containsKey(peso)) {
 			// Sí, entonces cumple la condición para formar el móvil.
-			Movil m = new Movil(pesoLeido, pesoLeido);
-			this.pesoTotal += m.retornarPesoTotal();
+			Movil movil = new Movil(peso, peso);
+			this.pesoTotal += movil.getPesoTotal();
 			this.cantVarillas++;
 
 			// Eliminar el peso del colgante del mapa.
-			int poseliminar = buscarClave(pesoLeido);
-			colgantes.remove(poseliminar);
+			colgantes.remove(peso);
 		} else {
 			// Si no existe agregarlo al mapa.
-			colgantes.put(clave, pesoLeido);
+			colgantes.put(peso, 1);
 		}
-
 	}
-
-	private int buscarClave(int pesoLeido) {
-		// Object priclave = colgantes.keySet().toArray()[0];//Obtener la primera clave
-		// del HashMap.
-		int posclavemapa = 1;// (int)priclave;
-		int posenc = 0;
-
-		while (posenc == 0) {
-			if (colgantes.get(posclavemapa) == pesoLeido) {
-				posenc = posclavemapa;
-			}
-			posclavemapa++;
-		}
-
-		return posenc;
-	}
-
 }
