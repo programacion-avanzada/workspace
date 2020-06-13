@@ -1,11 +1,11 @@
-package edu.unlam.progava.preparandoLaReceta;
+package edu.unlam.progava.receta;
 
 import java.util.Set;
 import java.util.TreeSet;
 
 public class Heladera {
 	
-	Set<String> ingredientes = new TreeSet<String>();
+	private Set<String> ingredientes = new TreeSet<String>();
 
 	public boolean add(String ingrediente) {
 		return ingredientes.add(ingrediente);

@@ -3,7 +3,10 @@ package edu.unlam.progava.complejidad;
 import java.util.LinkedList;
 import java.util.List;
 
-import edu.unlam.progava.complejidad.estrategias.*;
+import edu.unlam.progava.complejidad.estrategias.Estrategia1;
+import edu.unlam.progava.complejidad.estrategias.Estrategia2;
+import edu.unlam.progava.complejidad.estrategias.Estrategia3;
+import edu.unlam.progava.complejidad.estrategias.StreetNumbersStrategy;
 import edu.unlam.progava.complejidad.utils.Tupla;
 
 public class App {

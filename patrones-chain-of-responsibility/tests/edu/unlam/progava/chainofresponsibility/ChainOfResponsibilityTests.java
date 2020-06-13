@@ -1,11 +1,19 @@
-package chainOfResponsibility;
+package edu.unlam.progava.chainofresponsibility;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import edu.unlam.progava.chainofresponsibility.Default;
+import edu.unlam.progava.chainofresponsibility.Multiplicar;
+import edu.unlam.progava.chainofresponsibility.Operacion;
+import edu.unlam.progava.chainofresponsibility.Pedido;
+import edu.unlam.progava.chainofresponsibility.Restar;
+import edu.unlam.progava.chainofresponsibility.SumaYMultiplicacion;
+import edu.unlam.progava.chainofresponsibility.Sumar;
+
 public class ChainOfResponsibilityTests {
-	Operacion operacion;
+	private Operacion operacion;
 	
 	@Before
 	public void setUp() {

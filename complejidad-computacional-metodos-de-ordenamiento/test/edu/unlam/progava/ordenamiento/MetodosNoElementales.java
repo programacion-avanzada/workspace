@@ -3,9 +3,9 @@ package edu.unlam.progava.ordenamiento;
 import org.junit.Assert;
 import org.junit.Test;
 
-import edu.unlam.progava.ordenamiento.noElementales.PorMergeSort;
-import edu.unlam.progava.ordenamiento.noElementales.PorQuickSort;
-import edu.unlam.progava.ordenamiento.noElementales.PorShellSort;
+import edu.unlam.progava.ordenamiento.noelementales.PorMergeSort;
+import edu.unlam.progava.ordenamiento.noelementales.PorQuickSort;
+import edu.unlam.progava.ordenamiento.noelementales.PorShellSort;
 
 public class MetodosNoElementales {
 

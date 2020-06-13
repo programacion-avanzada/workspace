@@ -2,7 +2,7 @@
 
 Ejemplo de ejecución:
 
-```
+```bash
 Estrategia utilizada: Estrategia 1
 Reporte de tiempo: 121303.51 ms
 Resultados: 

@@ -1,4 +1,4 @@
-package edu.unlam.progava.preparandoLaReceta;
+package edu.unlam.progava.receta;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,6 +6,10 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import org.junit.Test;
+
+import edu.unlam.progava.receta.Heladera;
+import edu.unlam.progava.receta.ListaDelMercado;
+import edu.unlam.progava.receta.Receta;
 
 public class ListaDelMercadoTests {
 

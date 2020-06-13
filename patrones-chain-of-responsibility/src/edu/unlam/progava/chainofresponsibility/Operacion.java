@@ -1,4 +1,4 @@
-package chainOfResponsibility;
+package edu.unlam.progava.chainofresponsibility;
 
 public interface Operacion {
 

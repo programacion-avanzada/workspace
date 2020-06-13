@@ -1,4 +1,4 @@
-package edu.unlam.progava.computandoPatentes;
+package edu.unlam.progava.patentes;
 
 public abstract class Conversor {
 	protected final int VALOR_NUMERO_A_CHAR = 48;

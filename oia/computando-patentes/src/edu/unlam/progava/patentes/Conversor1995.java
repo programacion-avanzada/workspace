@@ -1,11 +1,11 @@
-package edu.unlam.progava.computandoPatentes;
+package edu.unlam.progava.patentes;
 
 public class Conversor1995 extends Conversor {
-	
+
 	public Conversor1995(Patente patente) {
 		super(patente);
 	}
-	
+
 	@Override
 	protected long getNumero() {
 		char[] simbolos = patente.valor.toCharArray();
@@ -20,8 +20,10 @@ public class Conversor1995 extends Conversor {
 	}
 
 	@Override
-	protected Patente getPatenteSiguiente(long numerico) {
+	protected Patente getPatenteSiguiente(final long _numerico) {
 		char[] simbolos = new char[6];
+		long numerico = _numerico;
+
 		simbolos[0] = (char) (numerico / (NUMEROS3 * LETRAS2) + VALOR_LETRA_A_CHAR);
 		numerico %= NUMEROS3 * LETRAS2;
 		simbolos[1] = (char) (numerico / (NUMEROS3 * LETRAS) + VALOR_LETRA_A_CHAR);

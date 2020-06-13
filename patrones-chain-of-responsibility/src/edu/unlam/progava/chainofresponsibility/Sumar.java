@@ -1,4 +1,4 @@
-package chainOfResponsibility;
+package edu.unlam.progava.chainofresponsibility;
 
 public class Sumar implements Operacion {
 
@@ -10,7 +10,7 @@ public class Sumar implements Operacion {
 
 	public int calcular(Pedido pedido) {
 
-		if (pedido.getTipoDeCalculo() == "sumar") {
+		if (pedido.getTipoDeCalculo().equals("sumar")) {
 			int resultado = pedido.getNumero1() + pedido.getNumero2();
 			System.out.print(pedido.getNumero1() + " + " + pedido.getNumero2());
 			System.out.print(" = " + resultado + "\n");

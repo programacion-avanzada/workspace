@@ -1,4 +1,4 @@
-package chainOfResponsibility;
+package edu.unlam.progava.chainofresponsibility;
 
 public class SumaYMultiplicacion implements Operacion {
 
@@ -11,7 +11,7 @@ public class SumaYMultiplicacion implements Operacion {
 
 	public int calcular(Pedido pedido) {
 		
-		if (pedido.getTipoDeCalculo() == "sym") {
+		if (pedido.getTipoDeCalculo().equals("sym")) {
 			Sumar s = new Sumar();
 			Multiplicar m = new Multiplicar();
 			
