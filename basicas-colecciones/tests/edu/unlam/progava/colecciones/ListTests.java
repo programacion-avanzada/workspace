@@ -9,10 +9,10 @@ import org.junit.Test;
 
 public class ListTests {
 
-	List<String> lista;
+	private List<String> lista;
 	
 	@Before
-	public void setup() {
+	public void setUp() {
 		lista = new ArrayList<String>();
 		// ^ también podría ser LinkedList
 		

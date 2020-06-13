@@ -1,4 +1,4 @@
-package edu.unlam.progava.computandoPatentes;
+package edu.unlam.progava.patentes;
 
 public class Patente {
 	String valor;

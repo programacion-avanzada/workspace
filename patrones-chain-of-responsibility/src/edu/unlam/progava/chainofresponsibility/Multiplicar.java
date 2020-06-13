@@ -1,4 +1,4 @@
-package chainOfResponsibility;
+package edu.unlam.progava.chainofresponsibility;
 
 public class Multiplicar implements Operacion {
 
@@ -11,7 +11,7 @@ public class Multiplicar implements Operacion {
 
 	public int calcular(Pedido pedido) {
 
-		if (pedido.getTipoDeCalculo() == "multiplicar") {
+		if (pedido.getTipoDeCalculo().equals("multiplicar")) {
 			int resultado = pedido.getNumero1() * pedido.getNumero2();
 			System.out.print(pedido.getNumero1() + " * " + pedido.getNumero2());
 			System.out.print(" = " + resultado + "\n");

@@ -1,4 +1,4 @@
-package edu.unlam.progava.preparandoLaReceta;
+package edu.unlam.progava.receta;
 
 import java.util.Set;
 import java.util.TreeSet;

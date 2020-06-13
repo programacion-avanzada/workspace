@@ -1,4 +1,4 @@
-package chainOfResponsibility;
+package edu.unlam.progava.chainofresponsibility;
 
 public class Restar implements Operacion {
 
@@ -11,7 +11,7 @@ public class Restar implements Operacion {
 
 	public int calcular(Pedido pedido) {
 
-		if (pedido.getTipoDeCalculo() == "restar") {
+		if (pedido.getTipoDeCalculo().equals("restar")) {
 			int resultado = pedido.getNumero1() - pedido.getNumero2();
 			System.out.print(pedido.getNumero1() + " - " + pedido.getNumero2());
 			System.out.print(" = " + resultado + "\n");

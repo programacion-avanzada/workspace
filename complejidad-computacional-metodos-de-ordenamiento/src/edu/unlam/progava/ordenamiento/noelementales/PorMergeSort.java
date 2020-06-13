@@ -1,4 +1,4 @@
-package edu.unlam.progava.ordenamiento.noElementales;
+package edu.unlam.progava.ordenamiento.noelementales;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
