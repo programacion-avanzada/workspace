@@ -7,4 +7,4 @@ El contador posee tres métodos, los cuales necesitan de un único atributo para
 
 ## Para practicar
 
- 1. ¿Cómo puedo lograr que el Contador pase el valor de `Integer.MAX_VALUE`?
+1. ¿Cómo puedo lograr que el Contador pase el valor de `Integer.MAX_VALUE`?

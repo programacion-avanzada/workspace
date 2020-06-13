@@ -10,7 +10,6 @@ public class PelotonTest {
 	private Unidad unidad2;
 	private Unidad unidad3;
 	private Unidad unidad4;
-	private Peloton peloton;
 	private Peloton pelotonDePelotones;
 
 	@Before
@@ -19,7 +18,7 @@ public class PelotonTest {
 		unidad2 = new Unidad(new Punto(0, 1));
 		unidad3 = new Unidad(new Punto(0, 2));
 		
-		peloton = new Peloton();
+		Peloton peloton = new Peloton();
 		peloton.agregar(unidad1);
 		peloton.agregar(unidad2);
 		peloton.agregar(unidad3);
