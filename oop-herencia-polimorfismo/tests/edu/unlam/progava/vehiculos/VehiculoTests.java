@@ -13,7 +13,7 @@ public class VehiculoTests {
 	private Remise remise;
 
 	@Before
-	public void setup() {
+	public void setUp() {
 		auto = new Automovil("Hernán");
 		remise = new Remise("Bigote");
 	}

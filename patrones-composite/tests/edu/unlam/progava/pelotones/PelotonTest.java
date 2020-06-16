@@ -6,41 +6,44 @@ import org.junit.Test;
 
 public class PelotonTest {
 
-	private Unidad u1, u2, u3, u4;
-	private Peloton p, pp;
+	private Unidad unidad1;
+	private Unidad unidad2;
+	private Unidad unidad3;
+	private Unidad unidad4;
+	private Peloton pelotonDePelotones;
 
 	@Before
-	public void setup() {
-		u1 = new Unidad(new Punto(0, 0));
-		u2 = new Unidad(new Punto(0, 1));
-		u3 = new Unidad(new Punto(0, 2));
+	public void setUp() {
+		unidad1 = new Unidad(new Punto(0, 0));
+		unidad2 = new Unidad(new Punto(0, 1));
+		unidad3 = new Unidad(new Punto(0, 2));
 		
-		p = new Peloton();
-		p.agregar(u1);
-		p.agregar(u2);
-		p.agregar(u3);
+		Peloton peloton = new Peloton();
+		peloton.agregar(unidad1);
+		peloton.agregar(unidad2);
+		peloton.agregar(unidad3);
 		
-		pp = new Peloton();
-		pp.agregar(p);
-		u4 = new Unidad(new Punto(-1, 2));
-		pp.agregar(u4);
+		pelotonDePelotones = new Peloton();
+		pelotonDePelotones.agregar(peloton);
+		unidad4 = new Unidad(new Punto(-1, 2));
+		pelotonDePelotones.agregar(unidad4);
 	}
 	
 	@Test
 	public void queTodosSeMueven() {
-		pp.moverse(3, -1.5);
+		pelotonDePelotones.moverse(3, -1.5);
 		
-		Assert.assertEquals(new Punto(3, -1.5), u1.getPosicion());
-		Assert.assertEquals(new Punto(3, -0.5), u2.getPosicion());
-		Assert.assertEquals(new Punto(3, 0.5), u3.getPosicion());
-		Assert.assertEquals(new Punto(2, 0.5), u4.getPosicion());
+		Assert.assertEquals(new Punto(3, -1.5), unidad1.getPosicion());
+		Assert.assertEquals(new Punto(3, -0.5), unidad2.getPosicion());
+		Assert.assertEquals(new Punto(3, 0.5), unidad3.getPosicion());
+		Assert.assertEquals(new Punto(2, 0.5), unidad4.getPosicion());
 	}
 	
 	@Test
 	public void queTodosAtacan() {
 		UnidadStub victima = new UnidadStub(new Punto(10, 10));
 		Assert.assertEquals(0, victima.getAtaquesRecibidos());
-		pp.atacar(victima);
+		pelotonDePelotones.atacar(victima);
 		Assert.assertEquals(4, victima.getAtaquesRecibidos());
 	}
 

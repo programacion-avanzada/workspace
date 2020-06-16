@@ -1,7 +1,8 @@
 package edu.unlam.progava.pelotones;
 public class Punto {
 
-	double x, y;
+	private double x;
+	private double y;
 
 	public Punto(double x, double y) {
 		super();
