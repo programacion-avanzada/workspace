@@ -1,4 +1,4 @@
-package armadomoviles;
+package edu.unlam.progava.moviles;
 
 public class Movil {
 	private int peso1;

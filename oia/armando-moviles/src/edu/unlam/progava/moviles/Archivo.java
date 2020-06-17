@@ -1,4 +1,4 @@
-package armadomoviles;
+package edu.unlam.progava.moviles;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,10 +1,10 @@
 
-package armadomoviles;
+package edu.unlam.progava.moviles;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class ArmadoMoviles {
+public class ArmandoMoviles {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 
