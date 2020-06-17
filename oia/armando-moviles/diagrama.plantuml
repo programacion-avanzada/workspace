@@ -1,0 +1,42 @@
+@startuml
+
+package "java.lang" {
+	class RuntimeException
+	class FileNotFoundException
+	class IOException
+}
+
+package "moviles" {
+	Artesano "1" o-- "*" Movil: -moviles
+	ArmandoMoviles - Archivo: usa >
+	Archivo o-- Artesano: artesano
+	
+	class Archivo {
+		- nombre: String
+		+ Archivo(nombre: String)
+		+ procesarArchivoIn()
+		+ generarArchivoOut()
+	}
+	class Artesano {
+		- cantVarillas: int
+		- pesoTotal: int
+		- colgantes: Map<Integer, Integer>
+		+ getCantVarillas(): int
+		+ getPesoTotal(): int
+		+ construirMovil(peso: int): void
+	}
+	class ArmandoMoviles {
+		{static} + main(args: String[])
+	}
+	class Movil {
+		- peso1: int
+		- peso2: int
+		+ Movil(peso1: int, peso2: int)
+		+ getPesoTotal():int
+	}
+}
+
+
+
+
+@enduml
