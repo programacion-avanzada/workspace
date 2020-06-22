@@ -1,0 +1,32 @@
+@startuml
+
+package "java.lang" {
+	class FileNotFoundException
+	class IOException
+}
+
+package "sumo" {
+	Torneo "1" o-- "*" Luchador: -luchadores
+	
+	package "archivos" {
+		ArchivoTorneo - Torneo: lee/escribe >
+	}
+}
+
+class Luchador {
+	-peso: int
+	-altura: int
+	+Luchador(peso: int, altura: int)
+	+domina(otro: Luchador): boolean
+}
+class Torneo {
+	+agregar(luchador: Luchador): boolean
+	+dominaciones(): int[]
+}
+class ArchivoTorneo {
+	-nombre: String
+	+Archivo(nombre: String)
+	+leer():Torneo
+	+escribir(dominaciones: int[]):void
+}
+@enduml
