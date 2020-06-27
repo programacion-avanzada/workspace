@@ -8,7 +8,7 @@ Este ejercicio nos solicita calcular un listado de dominaciones para un torneo d
 ## Estrategias de resolución
 Dado que debemos comparar de algún modo a todos los luchadores entre sí, la resolución no podrá escapar de una complejidad de O(n<sup>2</sup>). Por lo tanto, en algún sitio del código fuente encontraremos un fragmento similar a esto:
 
-```
+```smalltalk
 para cada luchador, uno
   para cada luchador, dos
     si (uno.domina? dos)
@@ -17,7 +17,7 @@ para cada luchador, uno
 
 Como podemos ver, eso requiere que visitemos n veces a los n luchadores. Una pequeña mejora que podríamos aplicar es realizar la comparación opuesta, y reutilizar los mismos accesos al arreglo. Sería algo así:
 
-```
+```smalltalk
 para cada luchador, uno
   para cada luchador, dos
     si (uno.domina? dos)
