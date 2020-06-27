@@ -26,4 +26,4 @@ para cada luchador, uno
       ...
 ```
 
-De esa manera podríamos reducir los rangos de iteración de ambos ciclos. Sin embargo, [no podremos bajar la complejidad computacional del problema](https://stackoverflow.com/questions/22676911/time-complexity-of-comparing-the-elements-in-the-same-array-to-each-other-only-o). Esta última implementación es la que se utilizó para desarrollar el ejercicio.
+De esa manera podríamos reducir los rangos de iteración de ambos ciclos. Sin embargo, [no podremos bajar la complejidad computacional del problema](https://stackoverflow.com/questions/22676911/time-complexity-of-comparing-the-elements-in-the-same-array-to-each-other-only-o) que queda en O(n<sup>2</sup>). Esta última implementación es la que se utilizó para desarrollar el ejercicio.

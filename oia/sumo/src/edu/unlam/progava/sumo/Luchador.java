@@ -6,7 +6,6 @@ public class Luchador {
 	private int altura;
 	
 	public Luchador(int peso, int altura) {
-		super();
 		this.peso = peso;
 		this.altura = altura;
 	}
