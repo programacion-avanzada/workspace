@@ -3,6 +3,8 @@ package edu.unlam.progava.computandoPatentes;
 import org.junit.Assert;
 import org.junit.Test;
 
+import edu.unlam.progava.patentes.Patente;
+
 public class ConversorTests {
 	
 	@Test

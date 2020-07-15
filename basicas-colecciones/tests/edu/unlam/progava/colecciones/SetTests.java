@@ -1,6 +1,5 @@
 package edu.unlam.progava.colecciones;
 
-import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -10,10 +9,10 @@ import org.junit.Test;
 
 public class SetTests {
 
-	Set<String> conjunto;
+	private Set<String> conjunto;
 	
 	@Before
-	public void setup() {
+	public void setUp() {
 		conjunto = new TreeSet<String>();
 		
 		conjunto.add("Lenny");

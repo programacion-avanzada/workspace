@@ -1,0 +1,19 @@
+package edu.unlam.progava.receta;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Heladera {
+	
+	private Set<String> ingredientes = new TreeSet<String>();
+
+	public boolean add(String ingrediente) {
+		return ingredientes.add(ingrediente);
+	}
+
+	public boolean contains(String ingrediente) {
+		return ingredientes.contains(ingrediente);
+	}
+	
+	
+}
