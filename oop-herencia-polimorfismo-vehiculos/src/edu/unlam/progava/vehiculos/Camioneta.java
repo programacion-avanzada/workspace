@@ -5,8 +5,6 @@ import java.util.List;
 
 public class Camioneta extends Vehiculo {
 
-	private final int CAPACIDAD_MAXIMA = 2000;
-	
 	private List<String> zonas = new LinkedList<String>();
 		
 	public boolean agregarZona(String zona) {
@@ -14,12 +12,13 @@ public class Camioneta extends Vehiculo {
 	}
 
 	public boolean puedeLlevar(Paquete paquete) {
-		if (this.zonas.contains(paquete.getDestino())) {
-			if (paquete.getPeso() + this.carga <= CAPACIDAD_MAXIMA) {
-				return true;
-			}
-		}
-		return false;
+		boolean paqueteEnZona = this.zonas.contains(paquete.getDestino());
+		return paqueteEnZona && puedeCargar(paquete);
+	}
+
+	@Override
+	protected int getCapacidadMaxima() {
+		return 2000;
 	}
 	
 }

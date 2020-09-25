@@ -1,6 +1,6 @@
 package edu.unlam.progava.vehiculos;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -44,7 +44,7 @@ public class LogisticaTests {
 	@Test
 	public void testDosVehiculosLlevanTodo() {
 		List<Vehiculo> vehiculos = new LinkedList<Vehiculo>();
-		Bicicleta bicicleta = new Bicicleta("Moron");
+		Vehiculo bicicleta = new Bicicleta("Moron");
 		vehiculos.add(bicicleta);
 		Camioneta camioneta = new Camioneta();
 		camioneta.agregarZona("Castelar");

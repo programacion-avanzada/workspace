@@ -2,8 +2,6 @@ package edu.unlam.progava.vehiculos;
 
 public class Bicicleta extends Vehiculo {
 
-	private final int CAPACIDAD_MAXIMA = 20;
-	
 	private String zona;
 	
 	public Bicicleta(String zona) {
@@ -11,12 +9,13 @@ public class Bicicleta extends Vehiculo {
 	}
 	
 	public boolean puedeLlevar(Paquete paquete) {
-		if (paquete.getDestino() == this.zona) {
-			if (paquete.getPeso() + this.carga <= CAPACIDAD_MAXIMA) {
-				return true;
-			}
-		}
-		return false;
+		boolean paqueteEnZona = paquete.getDestino() == this.zona;
+		return paqueteEnZona && puedeCargar(paquete);
+	}
+
+	@Override
+	protected int getCapacidadMaxima() {
+		return 20;
 	}
 	
 }
