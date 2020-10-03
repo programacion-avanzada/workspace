@@ -49,6 +49,51 @@ public class ListTests {
 		lista.add(1, "Patricio");
 		Assert.assertEquals("Patricio", lista.get(1));
 	}
+	
+	@Test
+	public void queRemuevoPosicionalmente() {
+		Assert.assertEquals("Salomón", lista.get(1));
+		Assert.assertEquals(4, lista.size());
+		
+		lista.remove(1);
+		
+		Assert.assertEquals("Ernesto", lista.get(1));
+		Assert.assertEquals(3, lista.size());
+	}
+	
+	@Test
+	public void queRemuevoPorIgualdad() {
+		Assert.assertEquals("Salomón", lista.get(1));
+		Assert.assertEquals(4, lista.size());
+		
+		lista.remove("Salomón");
+		
+		Assert.assertEquals("Ernesto", lista.get(1));
+		Assert.assertEquals(3, lista.size());
+	}
+	
+	@Test
+	public void queRemueveLaPrimeraOcurrencia() {
+		Assert.assertTrue(lista.contains("Salomón"));
+		lista.add("Salomón");
+
+		Assert.assertTrue(lista.contains("Salomón"));
+		
+		lista.remove("Salomón");
+
+		Assert.assertTrue(lista.contains("Salomón"));
+	}
+	
+	@Test
+	public void queReemplazoPosicionalmente() {
+		Assert.assertEquals("Salomón", lista.get(1));
+		Assert.assertEquals(4, lista.size());
+		
+		lista.set(1, "Patricio");
+		
+		Assert.assertEquals("Patricio", lista.get(1));
+		Assert.assertEquals(4, lista.size());
+	}
 
 	@Test
 	public void queSiAgregoPosicionalmenteSeExpande() {

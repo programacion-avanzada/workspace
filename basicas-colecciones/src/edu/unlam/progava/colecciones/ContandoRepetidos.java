@@ -28,6 +28,15 @@ public class ContandoRepetidos {
 			// getOrDefault nos ayuda a evitar preguntar por nulos para
 			// los valores no existentes
 			cuenta.put(nombre, cuenta.getOrDefault(nombre, 0) + 1);
+			
+			// opción rústica
+//			int cant;
+//			if (!cuenta.containsKey(nombre)) {
+//				cant = 1;
+//			} else {
+//				cant = cuenta.get(nombre) + 1;
+//			}
+//			cuenta.put(nombre, cant);
 		}
 
 		assertEquals(1, cuenta.get("Bruce").intValue());

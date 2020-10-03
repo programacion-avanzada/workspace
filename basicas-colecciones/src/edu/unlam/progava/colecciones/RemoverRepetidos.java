@@ -39,10 +39,18 @@ public class RemoverRepetidos {
 		// Y verificamos que tiene los cinco elementos que necesitamos
 		assertEquals(5, listaSinRepetir.size());
 		
-		assertTrue(listaSinRepetir.contains("Bruce"));
 		assertTrue(listaSinRepetir.contains("Benji"));
+		assertTrue(listaSinRepetir.contains("Bruce"));
 		assertTrue(listaSinRepetir.contains("Oliver"));
-		assertTrue(listaSinRepetir.contains("Tom"));
 		assertTrue(listaSinRepetir.contains("Steve"));
+		assertTrue(listaSinRepetir.contains("Tom"));
+		
+		// y está ordenado
+		assertEquals("Benji", listaSinRepetir.get(0));
+		assertEquals("Bruce", listaSinRepetir.get(1));
+		assertEquals("Oliver", listaSinRepetir.get(2));
+		assertEquals("Steve", listaSinRepetir.get(3));
+		assertEquals("Tom", listaSinRepetir.get(4));
+		
 	}
 }
