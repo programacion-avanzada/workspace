@@ -10,6 +10,7 @@ Este problema tiene como objetivo demostrar cómo utilizar la herencia y el poli
 * [Puntos de extensión](#puntos-de-extensión)
 * [Tecnologias](#tecnologias)
 * [Detalle de clases](#detalle-de-clases)
+* [Diagrama de clases](#diagrama-de-clases)
 * [Contribuciones](#contribuciones)
 
 ## Características especiales del problema
@@ -47,6 +48,9 @@ Este problema tiene como objetivo demostrar cómo utilizar la herencia y el poli
 
 ### :earth_americas: Logistica
 * Esta clase es el manager del envio de paquetes, se encargara de asignarle a los diferentes vehiculos los paquetes a entregar.
+
+## Diagrama de clases
+![diagrama-de-clases](assets/diagrama-de-clases.png)
 
 ## Contribuciones
 
