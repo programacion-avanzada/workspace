@@ -50,7 +50,7 @@ Este problema tiene como objetivo demostrar cómo utilizar la herencia y el poli
 * Esta clase es el manager del envio de paquetes, se encargara de asignarle a los diferentes vehiculos los paquetes a entregar.
 
 ## Diagrama de clases
-![diagrama-de-clases](assets/diagrama-de-clases.png)
+![diagrama-de-clases](assets/diagrama-de-clases.jpeg)
 
 ## Contribuciones
 
