@@ -17,6 +17,8 @@ Proporciona el cálculo al recorrer de izquierda a derecha según el teorema de 
 Estrategia3
 Proporciona el resultado al realizar el cálculo con la posición deseada. Tiempo de ejecución óptimo.
 
+ ![alt text](./diagrama-de-clases.jpg) 
+
 ## Complejidad Computacional
 
 Estrategia N° 1:
