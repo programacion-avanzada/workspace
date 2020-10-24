@@ -1,13 +1,18 @@
 Objetivo
+
 Se tiene como objetivo dar solución a un problema utilizando el patrón de diseño Composite.
+
 
 Problema
 
-Se desea construir un pelotón de unidades militares de las cuales cada unidad puede moverse utilizando un punto de coordenadas X e Y, realizar un ataque a un objetivo determinado que será una unidad militar y recibir un ataque. 
+Se desea construir un pelotón de unidades militares de las cuales cada unidad puede moverse utilizando un punto de coordenadas X e Y, realizar un ataque a un objetivo determinado que será una unidad militar y recibir un ataque.
+
 
 ¿Para qué se utiliza el patrón de diseño Composite?
 
 El patrón de diseño Composite nos sirve para construir estructuras complejas partiendo de otras estructuras mucho más simples, dicho de otra manera, podemos crear estructuras compuestas las cuales están conformadas por otras estructuras más pequeñas.
+
+
 
 ¿Qué componentes son necesarios en el Composite?
 
