@@ -26,7 +26,7 @@ O(N)
 Estrategia N° 3:
 O(1)
 
-Al evaluar las distintas complejidades computacionales que tienen las distintas estrategias se puede comprobar que la Estrategia 1 tiene un complejidad del tipo O(N * (posición *N)) la cual hará que el algoritmo tenga un retardo mucho mayor al aplicado en las estrategias 2 y 3 las cuales tienen una complejidad computacional lineal y constante, respectivamente. En otras palabras, obtenemos el mismo resultado con distintos algoritmos.
+Al evaluar las distintas complejidades computacionales que tienen las distintas estrategias se puede comprobar que la Estrategia 1 tiene un complejidad del tipo O(N * (posición + N)) la cual hará que el algoritmo tenga un retardo mucho mayor al aplicado en las estrategias 2 y 3 las cuales tienen una complejidad computacional lineal y constante, respectivamente. En otras palabras, obtenemos el mismo resultado con distintos algoritmos.
 
 ## Ejemplo de ejecución:
 
