@@ -7,7 +7,6 @@ Este proyecto me permite obtener el resultado al sumar las distintas posiciones 
 | StreetNumbers | |
 | ------------- | ------------- |
 | Interfaz que permite probar distintas  estrategias.  | StreetNumbersStrategy  |
-| Contenido de la celda  | Contenido de la celda  |
 
 
 | StreetNumbersStrategy | |
