@@ -1,5 +1,5 @@
 # StreetNumbers
-Este proyecto me permite obtener el resultado al sumar las distintas posiciones mientras avanza a su lado izquierdo  o su lado derecho, yendo hasta el final y regresando.
+Encuentra los números de la casa de una persona asumiendo que las casas están numeradas consecutivamente. La casa es el punto de partida, por lo que la diferencia entre la suma de todas las casas entre la primera y la casa de la persona y la suma de todas las casas después de la casa de la persona debe ser la misma.
 
 ## TARJETAS-CRC
 
