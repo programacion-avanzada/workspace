@@ -1,5 +1,5 @@
 # StreetNumbers
-Encuentra los números de la casa de una persona asumiendo que las casas están numeradas consecutivamente. La casa es el punto de partida, por lo que la diferencia entre la suma de todas las casas entre la primera y la casa de la persona y la suma de todas las casas después de la casa de la persona debe ser la misma.
+Encuentra la posición de la casa de una persona asumiendo que las casas están numeradas consecutivamente. La casa es el punto de partida, por lo que la diferencia entre la suma de la númeracióin de todas  las casas entre la primera y la casa de la persona y la suma de todas las casas después de la casa de la persona debe ser la misma. [+ INFO](https://algorithmist.com/wiki/UVa_138_-_Street_Numbers)
 
 ## TARJETAS-CRC
 
