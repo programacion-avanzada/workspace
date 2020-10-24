@@ -4,13 +4,13 @@ Este proyecto me permite obtener el resultado al sumar las distintas posiciones 
 ## TARJETAS-CRC
 
 
-| StreetNumbers | StreetNumbers |
+| StreetNumbers | |
 | ------------- | ------------- |
 | Interfaz que permite probar distintas  estrategias.  | StreetNumbersStrategy  |
 | Contenido de la celda  | Contenido de la celda  |
 
 
-| StreetNumbersStrategy | StreetNumbersStrategy |
+| StreetNumbersStrategy | |
 | ------------- | ------------- |
 | Proporciona el cálculo al recorrer de izquierda a derecha obteniendo la sumatoria de las mismas a medida que incrementa la posición.
 Tiempo de ejecución elevado.  | Estrategia1  |
