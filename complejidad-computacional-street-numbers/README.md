@@ -3,19 +3,15 @@ Este proyecto me permite obtener el resultado al sumar las distintas posiciones 
 
 ## TARJETAS-CRC
 
-StreetNumbers 
-Interfaz que permite probar distintas  estrategias.
+StreetNumbers: Interfaz que permite probar distintas  estrategias.
 
 StreetNumbersStrategy
 
-Estrategia1
-Proporciona el cálculo al recorrer de izquierda a derecha obteniendo la sumatoria de las mismas a medida que incrementa la posición. Tiempo de ejecución elevado.
+Estrategia1: Proporciona el cálculo al recorrer de izquierda a derecha obteniendo la sumatoria de las mismas a medida que incrementa la posición. Tiempo de ejecución elevado.
 
-Estrategia2
-Proporciona el cálculo al recorrer de izquierda a derecha según el teorema de sumas consecutivas a medida que incrementa la posición. Tiempo de ejecución medio.
+Estrategia2: Proporciona el cálculo al recorrer de izquierda a derecha según el teorema de sumas consecutivas a medida que incrementa la posición. Tiempo de ejecución medio.
 
-Estrategia3
-Proporciona el resultado al realizar el cálculo con la posición deseada. Tiempo de ejecución óptimo.
+Estrategia3: Proporciona el resultado al realizar el cálculo con la posición deseada. Tiempo de ejecución óptimo.
 
  ![alt text](./diagrama-de-clases.jpg) 
 
