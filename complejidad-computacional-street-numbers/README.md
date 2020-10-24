@@ -1,8 +1,7 @@
 # StreetNumbers
 Este proyecto me permite obtener el resultado al sumar las distintas posiciones mientras avanza a su lado izquierdo  o su lado derecho, yendo hasta el final y regresando.
 
-## TARJETAS-CRC
-
+## Tarjetas CRC
 
 | StreetNumbers | |
 | ------------- | ------------- |
@@ -15,6 +14,9 @@ Este proyecto me permite obtener el resultado al sumar las distintas posiciones 
 | Proporciona el cálculo al recorrer de izquierda a derecha según el teorema de sumas consecutivas a medida que incrementa la posición. Tiempo de ejecución medio. | Estrategia2 |
 | Proporciona el resultado al realizar el cálculo con la posición deseada. Tiempo de ejecución óptimo. | Estrategia3 |
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Stibitz256/workspace/streetnumbers/complejidad-computacional-street-numbers/diagrama-de-clases.jpg">
+</p>
 
 ## Complejidad Computacional
 
