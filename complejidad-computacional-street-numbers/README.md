@@ -12,12 +12,9 @@ Este proyecto me permite obtener el resultado al sumar las distintas posiciones 
 
 | StreetNumbersStrategy | |
 | ------------- | ------------- |
-| Proporciona el cálculo al recorrer de izquierda a derecha obteniendo la sumatoria de las mismas a medida que incrementa la posición.
-Tiempo de ejecución elevado.  | Estrategia1  |
-| Proporciona el cálculo al recorrer de izquierda a derecha según el teorema de sumas consecutivas a medida que incrementa la posición. 
-Tiempo de ejecución medio. | Estrategia2 |
-| Proporciona el resultado al realizar el cálculo con la posición deseada.
-Tiempo de ejecución óptimo. | Estrategia3 |
+| Proporciona el cálculo al recorrer de izquierda a derecha obteniendo la sumatoria de las mismas a medida que incrementa la posición. Tiempo de ejecución elevado.  | Estrategia1  |
+| Proporciona el cálculo al recorrer de izquierda a derecha según el teorema de sumas consecutivas a medida que incrementa la posición. Tiempo de ejecución medio. | Estrategia2 |
+| Proporciona el resultado al realizar el cálculo con la posición deseada. Tiempo de ejecución óptimo. | Estrategia3 |
 
 
 ## Complejidad Computacional
