@@ -43,8 +43,4 @@ De esta manera, se puede ver que, a través del encapsulamiento, podremos defini
 Si por ejemplo una clase externa quisiera asignarle un valor puntual al contador, no tendrá forma de hacerlo.
 Esto nos asegura que las clases externas harán solo lo que los métodos definidos les permitan hacer. 
 
-# Fuentes
 
-https://www.arquitecturajava.com/java-encapsulamiento-y-reutilizacion/
-https://techblogstation.com/java/encapsulation-in-java/
-https://www.geeksforgeeks.org/encapsulation-in-java/ 
