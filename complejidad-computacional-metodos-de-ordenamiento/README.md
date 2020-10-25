@@ -29,7 +29,7 @@ La eficiencia de un algoritmo no puede medirse en unidades de tiempo, ya que est
 
 ## Tabla complejidad Big O
 
-[![Tabla complejidad Big O](./TablaComplejidadBigO.PNG)](https://www.bigocheatsheet.com)
+[![Tabla complejidad Big O](https://github.com/error404LoveLetter/MejorandoElMaterialDisponible/blob/main/TablaComplejidadBigO.PNG)](https://www.bigocheatsheet.com)
 
 ## Métodos de ordenamientos
 
@@ -170,11 +170,11 @@ A tener en cuenta que, este algoritmo presenta n log n tanto en todos los casos.
 *   Caso Promedio: n log(n)
 *   Peor caso: n log(n)
 
-# Conclusiones
+## Conclusiones
 
 Para redondear todos los contenidos vistos queda entonces que
 
-## Definición de complejidad en métodos de ordenamiento
+### Definición de complejidad en métodos de ordenamiento
 
 La complejidad en los métodos de ordenamiento significa en términos simples, la cantidad de operaciones que requiere un algoritmo para completarse
 
@@ -200,7 +200,7 @@ Lo cual significa que el número de operaciones cambia de solo 450 operaciones a
 
 Por esa razón, es bueno analizar la complejidad de los métodos de ordenamiento, para reducir costos computacionales y optimizar los algoritmos
 
-#### Paginas interesantes para visitar
+## Paginas interesantes para visitar
 
 *   [Metodos de ordenamiento visuales](http://sorting.at)
 *   [Tabla con las distintas complejidades de metodos de ordenamiento](https://www.bigocheatsheet.com)
