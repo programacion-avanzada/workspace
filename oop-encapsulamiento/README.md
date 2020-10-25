@@ -1,17 +1,14 @@
-# Ejemplo de encapsulamiento
+## Ejemplo de encapsulamiento
 
 En este ejemplo vemos aplicado el encapsulamiento al concepto de un elemento simple, conocido como [contador de ganado](https://en.wikipedia.org/wiki/Tally_counter).
 
 El contador posee tres métodos, los cuales necesitan de un único atributo para funcionar correctamente.
 
-
 ## Para practicar
 
 1. ¿Cómo puedo lograr que el Contador pase el valor de `Integer.MAX_VALUE`?
 
-
-
-# Introducción
+## Introducción
 
 ¿En qué consiste el encapsulamiento?
 
@@ -25,7 +22,7 @@ Mayor flexibilidad: podemos hacer que las variables de la clase sean de solo lec
 Reutilización: la encapsulación también mejora la reutilización y es fácil de cambiar con nuevos requisitos.
 Probar el código es fácil: el código encapsulado es fácil de probar para las pruebas unitarias.
 
-# Aplicación practica
+## Aplicación practica
 
 Contador de Ganado
 Luis tiene un campo a las afueras de Buenos Aires y quiere contar sus cabezas de ganado para poder saber cuántas cabezas de ganado entran en cada camión. Por eso se compró un contador de ganado, que le permitirá contar las vacas mientras ingresan. Al llenarse un camión, tiene que reiniciarlo para contar cuantas entrarán en el próximo camión. 
@@ -37,10 +34,8 @@ contar (): aumentará el valor del atributo en uno.
 reiniciar (): pondrá el valor del atributo en cero.
 mostrar (): mostrará el valor del atributo.
  
-# Conclusión
+## Conclusión
 
 De esta manera, se puede ver que, a través del encapsulamiento, podremos definir aquellas operaciones que se quieren realizar con el atributo “contador”, dejando de lado aquellas innecesarias y/o no permitidas. Otras clases podrán manipular este atributo únicamente utilizando los métodos definidos en la clase Contador. 
 Si por ejemplo una clase externa quisiera asignarle un valor puntual al contador, no tendrá forma de hacerlo.
 Esto nos asegura que las clases externas harán solo lo que los métodos definidos les permitan hacer. 
-
-
