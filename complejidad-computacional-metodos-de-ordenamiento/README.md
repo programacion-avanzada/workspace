@@ -110,7 +110,7 @@ c = (n-1) + (n-2) + ... + 2 + 1 = (n*(n-1))/2
 
 Así en el peor caso tenemos de complejidad: O(n2)
 
-## Quicksort.
+## Quicksort
 
 El algoritmo de quickSort es uno de los métodos de ordenamiento más eficaces en cuanto complejidad. Lo ideal es es que el pivote no sea uno de los extremos y consta de una serie de pasos que ordena una lista utilizando el siguiente procedimiento
 
@@ -123,15 +123,15 @@ El algoritmo de quickSort es uno de los métodos de ordenamiento más eficaces e
 7.  Se repite desde el paso 2
 8.  Cuando se cruzan i y j entonces se intercambia i con p
 9.  Dividir el arreglo en dos subarreglos, en donde p es un nuevo pivote y el subarreglo izquierdo contiene elementos menores o iguales que p, mientras que el subarreglo derecho contiene valores mayores que p
-10.  Realizar Quicksort con el arreglo izquierdo sin incluir el elemento p
-11.  Realizar Quicksort con el arreglo derecho sin incluir el elemento p
+10. Realizar Quicksort con el arreglo izquierdo sin incluir el elemento p
+11. Realizar Quicksort con el arreglo derecho sin incluir el elemento p
 
 ### Complejidad de Quicksort
 
 La complejidad del algoritmo Quicksort varía en tres casos diferentes
 
 *   Mejor caso: Sucede cuando en cada pasada se selecciona el elemento central del conjunto. La complejidad en este caso es O(log n)
-*   Caso promedio: Es el tiempo promedio de ejecución, el cual es c = (n-1)* log n, es decir: O(n*log n)
+*   Caso promedio: Es el tiempo promedio de ejecución, el cual es c = (n-1)* log n, es decir:O(n*log n)
 *   Peor caso: Sucede cuando el arreglo está arreglado o en orden inverso, su complejidad es c = (n2+n)/2-1, y por lo tanto es del orden O(n2)
 
 ## Shell Sort
@@ -152,15 +152,15 @@ Este ordenamiento consiste en dividir el problema a resolver en subproblemas del
 
 **Pasos:**
 
-1.   Si la longitud de la lista es 0 ó 1, entonces ya está ordenada. En otro caso
+1.  Si la longitud de la lista es 0 ó 1, entonces ya está ordenada. En otro caso
    a.   Dividir la lista desordenada en dos sublistas de aproximadamente la mitad del tamaño
    b.   Ordenar cada sublista recursivamente aplicando el ordenamiento por mezcla
    c.   Mezclar las dos sublistas en una sola lista ordenada
 
 El ordenamiento por mezcla incorpora dos ideas principales para mejorar su tiempo de ejecución
 
-1.   Una lista pequeña necesitará menos pasos para ordenarse que una lista grande
-2.   Se necesitan menos pasos para construir una lista ordenada a partir de dos listas también ordenadas, que a partir de dos listas desordenadas. Por ejemplo, sólo será necesario entrelazar cada lista una vez que están ordenadas
+1.  Una lista pequeña necesitará menos pasos para ordenarse que una lista grande
+2.  Se necesitan menos pasos para construir una lista ordenada a partir de dos listas también ordenadas, que a partir de dos listas desordenadas. Por ejemplo, sólo será necesario entrelazar cada lista una vez que están ordenadas
 
 ### Complejidad del Merge
 
@@ -172,7 +172,9 @@ A tener en cuenta que, este algoritmo presenta n log n tanto en todos los casos.
 
 # Conclusiones
 
-## ¿Qué es la complejidad en los métodos de ordenamiento?
+Para redondear todos los contenidos vistos queda
+
+## Definición de complejidad en métodos de ordenamiento
 
 La complejidad en los métodos de ordenamiento significa en términos simples, la cantidad de operaciones que requiere un algoritmo para completarse
 
