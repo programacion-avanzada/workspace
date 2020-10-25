@@ -131,7 +131,7 @@ El algoritmo de quickSort es uno de los métodos de ordenamiento más eficaces e
 La complejidad del algoritmo Quicksort varía en tres casos diferentes
 
 *   Mejor caso: Sucede cuando en cada pasada se selecciona el elemento central del conjunto. La complejidad en este caso es O(log n)
-*   Caso promedio: Es el tiempo promedio de ejecución, el cual es c = (n-1)* log n, es decir:O(n*log n)
+*   Caso promedio:Es el tiempo promedio de ejecución,el cual es c=(n-1)*log n,es decir:O(n*log n)
 *   Peor caso: Sucede cuando el arreglo está arreglado o en orden inverso, su complejidad es c = (n2+n)/2-1, y por lo tanto es del orden O(n2)
 
 ## Shell Sort
@@ -172,7 +172,8 @@ A tener en cuenta que, este algoritmo presenta n log n tanto en todos los casos.
 
 # Conclusiones
 
-Para redondear todos los contenidos vistos queda
+Para redondear todos los contenidos vistos 
+queda entonces que
 
 ## Definición de complejidad en métodos de ordenamiento
 
