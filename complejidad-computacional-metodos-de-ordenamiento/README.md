@@ -172,16 +172,15 @@ A tener en cuenta que, este algoritmo presenta n log n tanto en todos los casos.
 
 # Conclusiones
 
-Para redondear todos los contenidos vistos 
-queda entonces que
+Para redondear todos los contenidos vistos queda entonces que
 
-## Definición de complejidad en métodos de ordenamiento
+# Definición de complejidad en métodos de ordenamiento
 
 La complejidad en los métodos de ordenamiento significa en términos simples, la cantidad de operaciones que requiere un algoritmo para completarse
 
 Aunque en ejemplos sencillos y cortos no haya gran diferencia entre una complejidad de orden O(n) y otra de orden O(n2), a gran escala el cambio en el número de operaciones es significativo en cuanto a tiempos de ejecución y coste computacional
 
-## Ejemplo de complejidad en los métodos de ordenamiento
+# Ejemplo de complejidad en los métodos de ordenamiento
 
 Si un algoritmo requiere de 5 iteraciones (valor de n) para completarse con los métodos de ordenamiento, podemos ver que el número de operaciones no cambia mucho
 
@@ -201,7 +200,7 @@ Lo cual significa que el número de operaciones cambia de solo 450 operaciones a
 
 Por esa razón, es bueno analizar la complejidad de los métodos de ordenamiento, para reducir costos computacionales y optimizar los algoritmos
 
-## Paginas interesantes para visitar
+# Paginas interesantes para visitar
 
 *   [Metodos de ordenamiento visuales](http://sorting.at)
 *   [Tabla con las distintas complejidades de metodos de ordenamiento](https://www.bigocheatsheet.com)
