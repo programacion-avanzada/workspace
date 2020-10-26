@@ -12,7 +12,7 @@ Existen 2 tipos de excepciones: verificadas y no verificadas, las primeras son a
 ##### checked = verificada
 
  
-## Explicación de la finalidad de las pruebas realizados
+## Explicación de la finalidad de las pruebas realizadas
 
 ### Prueba 1
 Se demuestra como la División por cero lanza una excepción del tipo `ArithmeticException`, y para poder comprobarlo a través de la prueba se indica en la línea 12 que esperamos que sea lanzada una excepción del tipo aritmética.
