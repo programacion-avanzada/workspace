@@ -8,7 +8,7 @@ Se buscará crear una cadena de llamados qué dará el orden secuencial de como 
 
 > Se utiliza la clase Operación, para poder demostrar la ventaja especifica de este patrón.
 
-![UML](uml.png)
+![Diagrama de clase](diagrama_de_clase.png)
 
 ## Clases
 * **Clase Manejadora:** Es la interfaz común a todas las clases manejadoras concretas. Es la encargada de tener el método para manejar las solicitudes y tambien cuenta con un método para establecer el siguiente manejador.
@@ -31,3 +31,7 @@ En nuestro esquema, *Cliente* es la interpretación del *Test*.
 ## Puntos de extensión
 
 * Se podrían agregar todas las operaciones que se deseen. Y, en caso de que se requiera, tambien agregar excepciones. Por ejemplo: una operacion *Division*, la cual, no se podría tener un denominador nulo.
+
+
+### Fuente
+["Chains of responsibility"](https://refactoring.guru/es/design-patterns/chain-of-responsibility).
