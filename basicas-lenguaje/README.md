@@ -23,12 +23,12 @@ Se adjunta documentación complementaria de todos los métodos descriptos y conc
 Además, se implementa el método “mover” que, a partir de un punto dado y unas coordenadas de desplazamiento, genera un nuevo punto.
 
 ### Puntos de extensión
-  -  Se podría agregar un constructor que no reciba como parámetros “X” e “Y” y que cree el objeto con valores por defecto.
-  -  Se podrían agregar los métodos de setX y setY para poder definir los valores de los atributos x e y.
+  - Se podría agregar un constructor que no reciba como parámetros “X” e “Y” y que cree el objeto con valores por defecto.
+  - Se podrían agregar los métodos de setX y setY para poder definir los valores de los atributos x e y.
 
 ### Ejemplos de uso
-  -  En el proyecto se encuentran realizados seis test diferentes (cada uno con ejemplos distintos) para poder probar los distintos métodos de la clase. 
-  -  Además, en el proyecto existen las clases PuntosPorEjeX y PuntosPorEjeY. Estas están definidas ya que hay un método que permite comparar la distancia entre dos puntos según su respectivo eje.
+  - En el proyecto se encuentran realizados seis test diferentes (cada uno con ejemplos distintos) para poder probar los distintos métodos de la clase. 
+  - Además, en el proyecto existen las clases PuntosPorEjeX y PuntosPorEjeY. Estas están definidas ya que hay un método que permite comparar la distancia entre dos puntos según su respectivo eje.
 
 ### API de Java
 
