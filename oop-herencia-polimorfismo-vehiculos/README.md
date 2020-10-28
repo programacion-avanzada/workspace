@@ -55,5 +55,5 @@ Este problema tiene como objetivo demostrar cómo utilizar la herencia y el poli
 ## Contribuciones
 
 * Las contribuciones a este proyecto siempre son bienvenidas. Para contribuir por favor primero cree un Fork ([¿Como lo hago?](http://kbroman.org/github_tutorial/pages/fork.html)), luego cree un Pull Request donde se discutira sobre los cambios.
-* Por favor a cada cambio que agregues no olvides mantener el test coverage!
+* Por favor a cada cambio que agregues ¡No olvides mantener el test coverage!
 
