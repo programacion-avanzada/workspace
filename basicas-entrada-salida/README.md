@@ -10,7 +10,7 @@ A continucaion mostramos un ejemplo basico de manejo de archivos. En este caso v
 
 ### Creacion de Clase Archivo
 
-Creamos la clase **archivo** que tiene un atributo de tipo `String`.
+Creamos la clase `Archivo` que tiene un atributo de tipo `String`.
 
 ```java
 public class Archivo {
