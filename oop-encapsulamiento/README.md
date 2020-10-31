@@ -35,9 +35,10 @@ mostrar (): mostrará el valor del atributo.
 
 ## Conclusión
 
-De esta manera, se puede ver que, a través del encapsulamiento, podremos definir aquellas operaciones que se quieren realizar con el atributo “contador”, dejando de lado aquellas innecesarias y/o no permitidas. Otras clases podrán manipular este atributo únicamente utilizando los métodos definidos en la clase Contador. 
-Si por ejemplo una clase externa quisiera asignarle un valor puntual al contador, no tendrá forma de hacerlo.
-Esto nos asegura que las clases externas harán solo lo que los métodos definidos les permitan hacer. 
+De esta manera, se puede ver que, a través del encapsulamiento, podremos definir aquellas operaciones que se quieren realizar con el atributo “contador”, dejando de lado aquellas innecesarias y/o no permitidas. Otras clases podrán manipular este atributo únicamente utilizando los métodos definidos en la clase `Contador`. 
+
+
+Si por ejemplo una clase externa quisiera asignarle un valor puntual al contador, no tendrá forma de hacerlo. Esto nos asegura que las clases externas harán solo lo que los métodos definidos les permitan hacer. 
 
 
 ## Ejemplo de encapsulamiento
