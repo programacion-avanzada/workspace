@@ -4,7 +4,7 @@
 
 - Los flujos son secuencias ordenadas de datos que tienen una fuente (flujos de entrada) o un destino (flujos de salida).
 
-![](https://github.com/fsabes/testreadme/blob/main/img.jpg)
+![](img.jpg)
 
 A continucaion mostramos un ejemplo basico de manejo de archivos. En este caso vamos a leer de un arhcivo con el nombre "uno.in" que contiene numeros, los cargamos en memoria  luego trabjamos con esos numeros(elevamos al cuadrado) y guardamos los resultados en otro archivo llamado "uno.out".
 
