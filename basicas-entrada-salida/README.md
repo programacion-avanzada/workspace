@@ -39,23 +39,24 @@ uno.in
 
 ```java
 public double[] leerArchivo() {
-		Scanner arch = null;
-		double[] datos = null;
-		try {
-			arch = new Scanner(new File("casos de prueba/in/" + this.nombre + ".in"));
-			arch.useLocale(Locale.ENGLISH);//especifica la configuración regional que se va a utilizar
-			int cant = arch.nextInt();
-			datos = new double[cant];
-			for (int i = 0; i < cant; i++) {
-				double n = arch.nextDouble();
-				datos[i] = n;
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			arch.close();	//Cerrar el archivo ,eso es mucho muy importante.
+	Scanner arch = null;
+	double[] datos = null;
+	try {
+		arch = new Scanner(new File("casos de prueba/in/" + this.nombre + ".in"));
+		arch.useLocale(Locale.ENGLISH);//especifica la configuración regional que se va a utilizar
+		int cant = arch.nextInt();
+		datos = new double[cant];
+		for (int i = 0; i < cant; i++) {
+			double n = arch.nextDouble();
+			datos[i] = n;
 		}
-		return datos;
+	} catch (Exception e) {
+		e.printStackTrace();
+	} finally {
+		arch.close();//Cerrar el archivo ,eso es mucho muy importante.
+	}
+	return datos;
+}
 ```
 ***
 ### ¿Como guardar un archivo?
