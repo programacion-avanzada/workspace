@@ -1,6 +1,6 @@
 # Entrada / Salida 
 ## E/S con flujos (streams)
-- El sistema de entrada/salida en Java. Usa la abstracción del flujo (stream) para tratar la comunicación de información entre el programa y el exterior (teclado, pantalla, archivos, sockets de red, e incluso con otro programa. Cualquier programa que tenga que obtener información de cualquier fuente necesita abrir un stream, igualmente si necesita enviar información abrirá un stream.
+- El sistema de entrada/salida en Java, usa la abstracción del flujo de datos (conocido como stream) para tratar la comunicación de información entre el programa y los medios externos. Estos medios externos pueden ser la pantalla, el teclado, los archivos, los sockets de red, e incluso otro programa. Cualquier programa que precise información de alguna fuente externa, necesitara al menos abrir un stream. De igual forma, si se requiere enviar información hacia un medio externo, también se necesitara abrir un stream.
 
 - Los flujos son secuencias ordenadas de datos que tienen una fuente (flujos de entrada) o un destino (flujos de salida).
 
@@ -65,26 +65,26 @@ public double[] leerArchivo() {
 
 ```java
 public void guardarArchivo(double[] datos) {
-		FileWriter archivo = null;
-		PrintWriter pw = null;
-		try {
-			archivo = new FileWriter("casos de prueba/out/" + this.nombre + ".out");
-			pw = new PrintWriter(archivo);
-			for(int i = 0; i < datos.length; i++) {
-				pw.println(datos[i]); //Imprime los datos y hace un salto de linea.
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			if (archivo != null) {
-				try {
-					archivo.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
+	FileWriter archivo = null;
+	PrintWriter pw = null;
+	try {
+		archivo = new FileWriter("casos de prueba/out/" + this.nombre + ".out");
+		pw = new PrintWriter(archivo);
+		for(int i = 0; i < datos.length; i++) {
+			pw.println(datos[i]); //Imprime los datos y hace un salto de linea.
+		}
+	} catch (Exception e) {
+		e.printStackTrace();
+	} finally {
+		if (archivo != null) {
+			try {
+				archivo.close();
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
 		}
 	}
+}
 ```
 ***
 ### Probamos el codigo
