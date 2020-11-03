@@ -31,13 +31,13 @@ La eficiencia de un algoritmo no puede medirse en unidades de tiempo, ya que est
 
 [![Tabla complejidad Big O](https://github.com/error404LoveLetter/MejorandoElMaterialDisponible/blob/main/TablaComplejidadBigO.PNG)](https://www.bigocheatsheet.com)
 
-## Métodos de ordenamientos
+## Métodos de ordenamiento
 
 Los algoritmos de ordenamiento permutan los elementos del conjunto de datos hasta conseguir dicho orden. Para ello se basan en dos operaciones básicas: la comparación y el intercambio
 
 ## Tipos de ordenamiento
 
-### Ordenamineto interno
+### Ordenamiento interno
 
 Ordenamiento de datos en Memoria Principal. (La lectura y grabación se hacen en registros)
 
@@ -55,7 +55,9 @@ A continuación se describira los distintos metodos de ordenamiento que se encue
 
 ## Método burbuja
 
-El **método burbuja** también conocido como intercambio directo es un método muy utilizado para ordenar una lista dentro de un arreglo. Su funcionamiento es muy intuitivo
+> El **método burbuja** también conocido como intercambio directo es un método muy utilizado para ordenar una lista dentro de un arreglo. Su funcionamiento es muy intuitivo
+>
+>> -- <cite>Fuente: [bitcu.co](https://bitcu.co/metodos-de-ordenamiento/)</cite>
 
 *   Comparamos un elemento con el adyacente
 *   Si el elemento es mayor, lo intercambiamos
@@ -70,13 +72,15 @@ c = (n-1) + (n-2) + ... + 2 + 1 = (n*(n-1))/2
 
 En donde c es el número total de comparaciones por el método burbuja, y simplificando esa expresión tenemos que
 
-c = (n2-n)/2
+c = (n²-n)/2
 
-Cuál es el número de comparaciones necesarias para este ordenamiento, es decir que su complejidad en el peor de los casos es del orden O(n2)
+Cuál es el número de comparaciones necesarias para este ordenamiento, es decir que su complejidad en el peor de los casos es del orden O(n²)
 
 ## Método de selección
 
-El **método de selección** es muy sencillo, este algoritmo consiste en ordenar el menor elemento de una lista en cada interacción, colocándolo en su posición dentro de la lista
+> El **método de selección** es muy sencillo, este algoritmo consiste en ordenar el menor elemento de una lista en cada interacción, colocándolo en su posición dentro de la lista
+>
+>> -- <cite>Fuente: [bitcu.co](https://bitcu.co/metodos-de-ordenamiento/)</cite>
 
 El procedimiento para efectuar un ordenamiento con este algoritmo es el siguiente
 
@@ -90,13 +94,15 @@ El algoritmo de selección requiere acomodar un array utilizando el array origin
 
 c = (n-1) + (n-2) + ... + 2 + 1 = (n*(n-1))/2
 
-Y por lo tanto el número de operaciones realizadas es del orden O(n2)
+Y por lo tanto el número de operaciones realizadas es del orden O(n²)
 
-c = (n2-n)/2
+c = (n²-n)/2
 
 ## Método de inserción
 
-El método de insercón es uno de los métodos de ordenamiento más semejantes a los utilizados en forma natural por el ser humano. Consiste en insertar elementos en forma ordenada en una lista directamente en el orden que le corresponde
+> El método de insercón es uno de los métodos de ordenamiento más semejantes a los utilizados en forma natural por el ser humano. Consiste en insertar elementos en forma ordenada en una lista directamente en el orden que le corresponde
+>
+>> -- <cite>Fuente: [bitcu.co](https://bitcu.co/metodos-de-ordenamiento/)</cite>
 
 Aunque ésta operación en forma humana podría consistir en una única operación, debido a nuestras capacidades cognitivas, para una computadora implica el uso de un algoritmo que consiste en tomar un elemento y colocarlo en un arreglo nuevo en la posición que le corresponde
 
@@ -108,11 +114,13 @@ En el peor caso, los datos están ordenados en orden inverso. En éste caso tene
 
 c = (n-1) + (n-2) + ... + 2 + 1 = (n*(n-1))/2
 
-Así en el peor caso tenemos de complejidad: O(n2)
+Así en el peor caso tenemos de complejidad: O(n²)
 
 ## Quicksort
 
-El algoritmo de quickSort es uno de los métodos de ordenamiento más eficaces en cuanto complejidad. Lo ideal es es que el pivote no sea uno de los extremos y consta de una serie de pasos que ordena una lista utilizando el siguiente procedimiento
+>El algoritmo de quickSort es uno de los métodos de ordenamiento más eficaces en cuanto complejidad. Lo ideal es es que el pivote no sea uno de los extremos y consta de una serie de pasos que ordena una lista utilizando el siguiente procedimiento
+>
+>> -- <cite>Fuente: [bitcu.co](https://bitcu.co/metodos-de-ordenamiento/)</cite>
 
 1.  Selecciona un elemento p “pivote” al azar.
 2.  Mientras los indices i y j no se crucen
@@ -131,24 +139,28 @@ El algoritmo de quickSort es uno de los métodos de ordenamiento más eficaces e
 La complejidad del algoritmo Quicksort varía en tres casos diferentes
 
 *   Mejor caso: Sucede cuando en cada pasada se selecciona el elemento central del conjunto. La complejidad en este caso es O(log n)
-*   Caso promedio:Es el tiempo promedio de ejecución,el cual es c=(n-1)*log n,es decir:O(n*log n)
-*   Peor caso: Sucede cuando el arreglo está arreglado o en orden inverso, su complejidad es c = (n2+n)/2-1, y por lo tanto es del orden O(n2)
+*   Caso promedio: Es el tiempo promedio de ejecución,el cual es c=(n-1) * log n,es decir: O(n * log n)
+*   Peor caso: Sucede cuando el arreglo está arreglado o en orden inverso, su complejidad es c = (n² + n)/2-1, y por lo tanto es del orden O(n²)
 
 ## Shell Sort
 
-El algoritmo Shell es una mejora de la ordenación por inserción, donde se van comparando elementos distantes, al tiempo que se los intercambian si corresponde. A medida que se aumentan los pasos, el tamaño de los saltos disminuye; por esto mismo, es útil tanto como si los datos desordenados se encuentran cercanos, o lejanos
+> El algoritmo Shell es una mejora de la ordenación por inserción, donde se van comparando elementos distantes, al tiempo que se los intercambian si corresponde. A medida que se aumentan los pasos, el tamaño de los saltos disminuye; por esto mismo, es útil tanto como si los datos desordenados se encuentran cercanos, o lejanos
+>
+>> -- <cite>Fuente: [ecured.cu](https://www.ecured.cu/Algoritmo_de_Ordenamiento_Shell)</cite>
 
 Es bastante adecuado para ordenar listas de tamaño moderado, debido a que su velocidad es aceptable y su codificación es bastante sencilla. Su velocidad depende de la secuencia de valores con los cuales trabaja, ordenándolos
 
 ### Complejidad del ordenamiento Shell
 
 *   Mejor caso: n log n
-*   Caso promedio: n (log n)^2
-*   Peor caso: n (log n)^2
+*   Caso promedio: n (log n)²
+*   Peor caso: n (log n)²
 
 ## Merge Sort
 
-Este ordenamiento consiste en dividir el problema a resolver en subproblemas del mismo tipo que a su vez se dividirán, mientras no sean suficientemente pequeños o triviales. MergeSort es un ordenamiento estable, paraleliza mejor, y es más eficiente manejando medios secuenciales de acceso lento. MergeSort es a menudo la mejor opción para ordenar una lista enlazada
+> Este ordenamiento consiste en dividir el problema a resolver en subproblemas del mismo tipo que a su vez se dividirán, mientras no sean suficientemente pequeños o triviales. MergeSort es un ordenamiento estable, paraleliza mejor, y es más eficiente manejando medios secuenciales de acceso lento. MergeSort es a menudo la mejor opción para ordenar una lista enlazada
+>
+>> -- <cite>Fuente: [ecured.cu](https://www.ecured.cu/MergeSort)</cite>
 
 **Pasos:**
 
@@ -178,21 +190,21 @@ Para redondear todos los contenidos vistos queda entonces que
 
 La complejidad en los métodos de ordenamiento significa en términos simples, la cantidad de operaciones que requiere un algoritmo para completarse
 
-Aunque en ejemplos sencillos y cortos no haya gran diferencia entre una complejidad de orden O(n) y otra de orden O(n2), a gran escala el cambio en el número de operaciones es significativo en cuanto a tiempos de ejecución y coste computacional
+Aunque en ejemplos sencillos y cortos no haya gran diferencia entre una complejidad de orden O(n) y otra de orden O(n²), a gran escala el cambio en el número de operaciones es significativo en cuanto a tiempos de ejecución y coste computacional
 
 ### Ejemplo de complejidad en los métodos de ordenamiento
 
 Si un algoritmo requiere de 5 iteraciones (valor de n) para completarse con los métodos de ordenamiento, podemos ver que el número de operaciones no cambia mucho
 
 *   O(n) ≈ 5 operaciones
-*   O(n2) ≈ 25 operaciones
-*   O(n3) ≈ 125 operaciones
+*   O(n²) ≈ 25 operaciones
+*   O(n³) ≈ 125 operaciones
 
 Pero si el algoritmo requiere 450 operaciones para completarse, el valor del orden sí importa, véase el siguiente ejemplo
 
 *   O(n) ≈ 450 operaciones
-*   O(n2) ≈ 202500 operaciones
-*   O(n3) ≈ 191,125,000 operaciones
+*   O(n²) ≈ 202500 operaciones
+*   O(n³) ≈ 191,125,000 operaciones
 
 Lo cual significa que el número de operaciones cambia de solo 450 operaciones a ¡casi 200 millones! en solo pasar del lineal al cúbico
 
