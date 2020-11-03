@@ -118,7 +118,7 @@ Así en el peor caso tenemos de complejidad: O(n²)
 
 ## Quicksort
 
->El algoritmo de quickSort es uno de los métodos de ordenamiento más eficaces en cuanto complejidad. Lo ideal es es que el pivote no sea uno de los extremos y consta de una serie de pasos que ordena una lista utilizando el siguiente procedimiento
+> El algoritmo de quickSort es uno de los métodos de ordenamiento más eficaces en cuanto complejidad. Lo ideal es es que el pivote no sea uno de los extremos y consta de una serie de pasos que ordena una lista utilizando el siguiente procedimiento
 >
 >> -- <cite>Fuente: [bitcu.co](https://bitcu.co/metodos-de-ordenamiento/)</cite>
 
