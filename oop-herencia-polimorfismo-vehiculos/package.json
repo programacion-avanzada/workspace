@@ -1,0 +1,12 @@
+{
+  "name": "oop-herencia-polimorfismo-vehiculos",
+  "version": "1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+	"url": "https://github.com/programacion-avanzada/workspace.git"
+  },
+  "author": "",
+  "homepage": "https://github.com/programacion-avanzada/workspace"
+
+}

@@ -1,5 +1,5 @@
 # Logística de Paquetería 
-![version](https://img.shields.io/static/v1?label=version&message=v0.1&color=green) ![tamanio](https://img.shields.io/static/v1?label=tamanio&message=6.36kb&color=green) ![contribuciones](https://img.shields.io/static/v1?label=contribuciones&message=bienvenidas&color=green)
+![version](https://img.shields.io/github/package-json/v/programacion-avanzada/workspace?color=green) ![size](https://img.shields.io/github/languages/code-size/programacion-avanzada/workspace?color=green&label=size&style=plastic) ![contribuciones](https://img.shields.io/static/v1?label=contribuciones&message=bienvenidas&color=green)
 
 Este problema tiene como objetivo demostrar cómo utilizar la herencia y el polimorfismo, utilizando para ello un problema simple:
 
