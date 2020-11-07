@@ -17,6 +17,7 @@ public class Archivo {
 	private String nombre;
 	public Archivo(String nombre) { //Constructor
 		this.nombre = nombre;
+	}
 }
 ```
 ***
