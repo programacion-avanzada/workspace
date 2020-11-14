@@ -116,3 +116,12 @@ uno.out
 261.1456
 900.0
 ```
+***
+#### Bibliografía
+*Curso de programación Java - Abraham Otero*
+*http://www.javahispano.org/portada/2011/7/5/curso-de-programacion-java-v-abraham-otero.html*
+
+ *Streams en Programación Orientada a Objetos*
+ *https://slideplayer.es/slide/3789298*
+
+
