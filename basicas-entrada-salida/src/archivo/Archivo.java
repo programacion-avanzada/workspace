@@ -8,7 +8,6 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Archivo {
-
 	private String nombre;
 
 	public Archivo(String nombre) {
@@ -16,45 +15,50 @@ public class Archivo {
 	}
 
 	public double[] leerArchivo() {
-		Scanner arch = null;
+		Scanner scanner = null;
 		double[] datos = null;
 
 		try {
-			arch = new Scanner(new File("casos de prueba/in/" + this.nombre + ".in"));
-			arch.useLocale(Locale.ENGLISH);
+			File file = new File("casos de prueba/in/" + this.nombre + ".in");
+			scanner = new Scanner(file);
+			// Especifica la configuración regional que se va a utilizar
+			scanner.useLocale(Locale.ENGLISH);
+			// arch.useLocale(new Locale("es_AR"));
 
-			int cant = arch.nextInt();
+			int cant = scanner.nextInt();
 			datos = new double[cant];
 			for (int i = 0; i < cant; i++) {
-				double n = arch.nextDouble();
+				double n = scanner.nextDouble();
 				datos[i] = n;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			arch.close();
+			// Cerrar el archivo, eso es mucho muy importante
+			scanner.close();
 		}
 		return datos;
 
 	}
 
 	public void guardarArchivo(double[] datos) {
-		FileWriter archivo = null;
-		PrintWriter pw = null;
+		FileWriter file = null;
+		PrintWriter printerWriter = null;
 
 		try {
-			archivo = new FileWriter("casos de prueba/out/" + this.nombre + ".out");
-			pw = new PrintWriter(archivo);
+			file = new FileWriter("casos de prueba/out/" + this.nombre + ".out");
+			printerWriter = new PrintWriter(file);
 
-			for(int i = 0; i < datos.length; i++) {
-				pw.println(datos[i]);				
+			for (int i = 0; i < datos.length; i++) {
+				// Imprime los datos y hace un salto de linea
+				printerWriter.println(datos[i]);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			if (archivo != null) {
+			if (file != null) {
 				try {
-					archivo.close();
+					file.close();
 				} catch (IOException e) {
 					e.printStackTrace();
 				}

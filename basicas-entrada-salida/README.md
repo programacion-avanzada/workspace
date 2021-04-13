@@ -15,7 +15,9 @@ Creamos la clase `Archivo` que tiene un atributo de tipo `String`.
 ```java
 public class Archivo {
 	private String nombre;
-	public Archivo(String nombre) { //Constructor
+
+	// Constructor
+	public Archivo(String nombre) {
 		this.nombre = nombre;
 	}
 }
@@ -44,7 +46,8 @@ public double[] leerArchivo() {
 	double[] datos = null;
 	try {
 		arch = new Scanner(new File("casos de prueba/in/" + this.nombre + ".in"));
-		arch.useLocale(Locale.ENGLISH);//especifica la configuración regional que se va a utilizar
+		// Especifica la configuración regional que se va a utilizar
+		arch.useLocale(Locale.ENGLISH);
 		int cant = arch.nextInt();
 		datos = new double[cant];
 		for (int i = 0; i < cant; i++) {
@@ -54,7 +57,8 @@ public double[] leerArchivo() {
 	} catch (Exception e) {
 		e.printStackTrace();
 	} finally {
-		arch.close();//Cerrar el archivo ,eso es mucho muy importante.
+		// Cerrar el archivo ,eso es mucho muy importante
+		arch.close();
 	}
 	return datos;
 }
@@ -71,8 +75,9 @@ public void guardarArchivo(double[] datos) {
 	try {
 		archivo = new FileWriter("casos de prueba/out/" + this.nombre + ".out");
 		pw = new PrintWriter(archivo);
-		for(int i = 0; i < datos.length; i++) {
-			pw.println(datos[i]); //Imprime los datos y hace un salto de linea.
+		for (int i = 0; i < datos.length; i++) {
+			// Imprime los datos y hace un salto de linea.
+			pw.println(datos[i]);
 		}
 	} catch (Exception e) {
 		e.printStackTrace();
