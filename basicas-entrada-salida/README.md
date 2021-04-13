@@ -15,7 +15,9 @@ Creamos la clase `Archivo` que tiene un atributo de tipo `String`.
 ```java
 public class Archivo {
 	private String nombre;
-	public Archivo(String nombre) { //Constructor
+
+	// Constructor
+	public Archivo(String nombre) {
 		this.nombre = nombre;
 	}
 }
@@ -40,21 +42,28 @@ uno.in
 
 ```java
 public double[] leerArchivo() {
-	Scanner arch = null;
+	Scanner scanner = null;
 	double[] datos = null;
+
 	try {
-		arch = new Scanner(new File("casos de prueba/in/" + this.nombre + ".in"));
-		arch.useLocale(Locale.ENGLISH);//especifica la configuración regional que se va a utilizar
-		int cant = arch.nextInt();
+		File file = new File("casos de prueba/in/" + this.nombre + ".in");
+		scanner = new Scanner(file);
+		// Especifica la configuración regional que se va a utilizar
+		scanner.useLocale(Locale.ENGLISH);
+		// Para la configuración regional de Argentina, utilizar:
+		// arch.useLocale(new Locale("es_AR"));
+
+		int cant = scanner.nextInt();
 		datos = new double[cant];
 		for (int i = 0; i < cant; i++) {
-			double n = arch.nextDouble();
+			double n = scanner.nextDouble();
 			datos[i] = n;
 		}
 	} catch (Exception e) {
 		e.printStackTrace();
 	} finally {
-		arch.close();//Cerrar el archivo ,eso es mucho muy importante.
+		// Cerrar el archivo, eso es mucho muy importante
+		scanner.close();
 	}
 	return datos;
 }
@@ -66,20 +75,23 @@ public double[] leerArchivo() {
 
 ```java
 public void guardarArchivo(double[] datos) {
-	FileWriter archivo = null;
-	PrintWriter pw = null;
+	FileWriter file = null;
+	PrintWriter printerWriter = null;
+
 	try {
-		archivo = new FileWriter("casos de prueba/out/" + this.nombre + ".out");
-		pw = new PrintWriter(archivo);
-		for(int i = 0; i < datos.length; i++) {
-			pw.println(datos[i]); //Imprime los datos y hace un salto de linea.
+		file = new FileWriter("casos de prueba/out/" + this.nombre + ".out");
+		printerWriter = new PrintWriter(file);
+
+		for (int i = 0; i < datos.length; i++) {
+			// Imprime los datos y hace un salto de linea
+			printerWriter.println(datos[i]);
 		}
 	} catch (Exception e) {
 		e.printStackTrace();
 	} finally {
-		if (archivo != null) {
+		if (file != null) {
 			try {
-				archivo.close();
+				file.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -93,15 +105,24 @@ public void guardarArchivo(double[] datos) {
 Ahora solo nos queda probar el codigo.
 
 ```java
+public class Resolucion {
+	public void resolver(String nombreArchivo) {
+		Archivo archivo = new Archivo(nombreArchivo);
+		double[] datos = archivo.leerArchivo();
+
+		// Elevo al cuadrado
+		for (int i = 0; i < datos.length; i++) {
+			datos[i] = (double) Math.round(datos[i] * datos[i] * 10000d) / 10000d;
+		}
+
+		archivo.guardarArchivo(datos);
+	}
+}
+
 public class Main {
 	public static void main(String[] args) {
-		Archivo archivo = new Archivo("uno");
-		double[] datos = archivo.leerArchivo();
-		// Elevo al cuadrado
-		for(int i = 0; i < datos.length; i++) {
-			datos[i] = (double)Math.round(datos[i] * datos[i] * 10000d) / 10000d;
-		}
-		archivo.guardarArchivo(datos);
+		Resolucion resolucion = new Resolucion();
+		resolucion.resolver("uno");
 	}
 }
 ```
