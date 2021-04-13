@@ -21,8 +21,9 @@ public class Archivo {
 		try {
 			File file = new File("casos de prueba/in/" + this.nombre + ".in");
 			scanner = new Scanner(file);
-			// Especifica la configuraci�n regional que se va a utilizar
+			// Especifica la configuración regional que se va a utilizar
 			scanner.useLocale(Locale.ENGLISH);
+			// Para la configuración regional de Argentina, utilizar:
 			// arch.useLocale(new Locale("es_AR"));
 
 			int cant = scanner.nextInt();
@@ -38,7 +39,6 @@ public class Archivo {
 			scanner.close();
 		}
 		return datos;
-
 	}
 
 	public void guardarArchivo(double[] datos) {

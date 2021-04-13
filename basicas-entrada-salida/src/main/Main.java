@@ -7,5 +7,4 @@ public class Main {
 		Resolucion resolucion = new Resolucion();
 		resolucion.resolver("uno");
 	}
-
 }
