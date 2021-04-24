@@ -10,18 +10,18 @@ package "edu.unlam.progava.cafe" {
 		+ servir(): VasoDeCafe
 		# puedeServir(): boolean
 		# descartar(): void
-		# despuesDeServir: void
-		# entregar: VasoDeCafe
+		# despuesDeServir(): void
+		# entregar(): VasoDeCafe
 	}
 	class MaquinaPremium {
 	}
 	class MaquinaEconomica {
 		# descartar(): void
-		# despuesDeServir: void
+		# despuesDeServir(): void
 	}
 	class MaquinaEstafadora {
 		# descartar(): void
-		# entregar: VasoDeCafe
+		# entregar(): VasoDeCafe
 	}
 	class VasoDeCafe {
 		+ isLleno(): boolean
