@@ -122,7 +122,7 @@ Así en el peor caso tenemos de complejidad: O(n²)
 >
 >> -- <cite>Fuente: [bitcu.co](https://bitcu.co/metodos-de-ordenamiento/)</cite>
 
-1.  Selecciona un elemento p “pivote” al azar.
+1.  Selecciona un elemento p "pivote".
 2.  Mientras los indices i y j no se crucen
 3.  Se busca por la izquierda el primer elemento mayor al pivote a través i incrementandolo
 4.  Se busca por la derecha el primer elemento menor al pivote a través j decrementandolo
@@ -136,11 +136,7 @@ Así en el peor caso tenemos de complejidad: O(n²)
 
 ### Complejidad de Quicksort
 
-La complejidad del algoritmo Quicksort varía en tres casos diferentes
-
-*   Mejor caso: Sucede cuando en cada pasada se selecciona el elemento central del conjunto. La complejidad en este caso es O(log n)
 *   Caso promedio: Es el tiempo promedio de ejecución,el cual es c=(n-1) * log n,es decir: O(n * log n)
-*   Peor caso: Sucede cuando el arreglo está arreglado o en orden inverso, su complejidad es c = (n² + n)/2-1, y por lo tanto es del orden O(n²)
 
 ## Shell Sort
 
