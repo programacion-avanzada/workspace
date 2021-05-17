@@ -1,0 +1,30 @@
+@startuml
+
+package "edu.unlam.progava.cafe" {
+	MaquinaDeCafe <|-- MaquinaPremium
+	MaquinaDeCafe <|-- MaquinaEconomica
+	MaquinaDeCafe <|-- MaquinaEstafadora
+	MaquinaDeCafe --> VasoDeCafe : utiliza
+
+	class MaquinaDeCafe {
+		+ servir(): VasoDeCafe
+		# puedeServir(): boolean
+		# descartar(): void
+		# despuesDeServir(): void
+		# entregar(): VasoDeCafe
+	}
+	class MaquinaPremium {
+	}
+	class MaquinaEconomica {
+		# descartar(): void
+		# despuesDeServir(): void
+	}
+	class MaquinaEstafadora {
+		# descartar(): void
+		# entregar(): VasoDeCafe
+	}
+	class VasoDeCafe {
+		+ isLleno(): boolean
+	}
+}
+@enduml
