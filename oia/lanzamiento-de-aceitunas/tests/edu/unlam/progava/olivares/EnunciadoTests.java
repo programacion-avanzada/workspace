@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import edu.unlam.progava.olivares.estrategias.Cuadratica;
 import edu.unlam.progava.olivares.estrategias.Diferencia;
 
 public class EnunciadoTests {
@@ -34,6 +35,12 @@ public class EnunciadoTests {
 	@Test
 	public void estrategiaDiferencia() {
 		partido.setEstrategia(new Diferencia());
+		Assert.assertEquals(90, partido.obtenerMejorR2());
+	}
+	
+	@Test
+	public void estrategiaCuadratica() {
+		partido.setEstrategia(new Cuadratica());
 		Assert.assertEquals(90, partido.obtenerMejorR2());
 	}
 }

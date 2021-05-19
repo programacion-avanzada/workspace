@@ -11,7 +11,7 @@ public class Diferencia extends Estrategia {
 	 * @SpaceComplexity distanciaMaximaCentro * 2 Bytes (size of short)
 	 */
 	@Override
-	public int obtenerMejorR2(List<Lanzamiento> lanzamientos) {
+	public int obtenerMejorR2(final List<Lanzamiento> lanzamientos) {
 		short[] diferencias = new short[getDistanciaMaxima(lanzamientos) + 1];
 
 		// Colocamos los puntos
@@ -30,5 +30,4 @@ public class Diferencia extends Estrategia {
 
 		return mejorR2;
 	}
-
 }

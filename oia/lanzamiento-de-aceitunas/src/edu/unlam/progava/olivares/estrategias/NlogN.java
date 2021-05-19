@@ -14,15 +14,15 @@ public class NlogN extends Estrategia {
 	 * @SpaceComplexity Clone, o usar como metodo mutable
 	 */
 	@Override
-	public int obtenerMejorR2(List<Lanzamiento> lanzamientos) {
+	public int obtenerMejorR2(final List<Lanzamiento> _lanzamientos) {
 		// Clonamos O(n)
-		lanzamientos = new ArrayList<>(lanzamientos);
+		List<Lanzamiento> lanzamientos = new ArrayList<Lanzamiento>(_lanzamientos);
 
 		// Ordenamos O(n * log(n))
 		Collections.sort(lanzamientos, new Comparator<Lanzamiento>() {
 			@Override
 			public int compare(Lanzamiento l1, Lanzamiento l2) {
-				return l1.getDistanciaCuadrado() - l2.getDistanciaCuadrado();
+				return Integer.compare(l1.getDistanciaCuadrado(), l2.getDistanciaCuadrado());
 			}
 		});
 
