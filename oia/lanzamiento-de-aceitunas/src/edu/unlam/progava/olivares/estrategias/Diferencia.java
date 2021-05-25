@@ -12,7 +12,7 @@ public class Diferencia extends Estrategia {
 	 */
 	@Override
 	public int obtenerMejorR2(final List<Lanzamiento> lanzamientos) {
-		short[] diferencias = new short[getDistanciaMaxima(lanzamientos) + 1];
+		int[] diferencias = new int[getDistanciaMaxima(lanzamientos) + 1];
 
 		// Colocamos los puntos
 		for (Lanzamiento lanzamiento : lanzamientos) {

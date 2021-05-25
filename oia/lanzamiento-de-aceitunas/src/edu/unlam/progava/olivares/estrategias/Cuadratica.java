@@ -1,8 +1,5 @@
 package edu.unlam.progava.olivares.estrategias;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import edu.unlam.progava.olivares.Lanzamiento;

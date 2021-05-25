@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import edu.unlam.progava.olivares.estrategias.Cuadratica;
 import edu.unlam.progava.olivares.estrategias.Diferencia;
+import edu.unlam.progava.olivares.estrategias.MejorEstrategia;
 
 public class TirosLejanosTests {
 	private Partido partido;
@@ -14,7 +15,7 @@ public class TirosLejanosTests {
 	public void setUp() {
 		partido = new Partido();
 
-		for (int i = 0; i < 50_0000; i++) {
+		for (int i = 0; i < 500_000; i++) {
 			partido.agregar(new Lanzamiento(1, (int) Math.sqrt(i * 1000 - 1)));
 			partido.agregar(new Lanzamiento(-1, (int) Math.sqrt(i * 1000 + 1)));
 		}
@@ -30,10 +31,16 @@ public class TirosLejanosTests {
 		partido.setEstrategia(new Diferencia());
 		Assert.assertEquals(1, partido.obtenerMejorR2());
 	}
-	
+
 	@Test(timeout = 10_000)
 	public void estrategiaCuadratica() {
 		partido.setEstrategia(new Cuadratica());
+		Assert.assertEquals(1, partido.obtenerMejorR2());
+	}
+
+	@Test
+	public void mejorEstrategia() {
+		partido.setEstrategia(new MejorEstrategia());
 		Assert.assertEquals(1, partido.obtenerMejorR2());
 	}
 }
