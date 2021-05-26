@@ -1,0 +1,36 @@
+@startuml
+
+package "reparacion" {
+	Bicicleta --> EstacionDeReparacion
+	EstacionDeReparacion <|-- EstacionDeInflado
+	EstacionDeReparacion <|-- EstacionDeFrenos
+	EstacionDeReparacion <|-- EstacionDeEngrase
+	EstacionDeReparacion <|-- EstacionDeAjuste
+	EstacionDeReparacion o-- EstacionDeReparacion
+}
+
+abstract class EstacionDeReparacion {
+	# siguiente: EstacionDeReparacion
+	+ setSiguiente(EstacionDeReparacion): void
+	+ reparar(Bicicleta): void
+	# {abstract} doReparar(Bicicleta): boolean
+	# seguirCadena(): void
+}
+
+class EstacionDeInflado {
+	# doReparar(Bicicleta): boolean
+}
+
+class EstacionDeFrenos {
+	# doReparar(Bicicleta): boolean
+}
+
+class EstacionDeEngrase {
+	# doReparar(Bicicleta): boolean
+}
+
+class EstacionDeAjuste {
+	# doReparar(Bicicleta): boolean
+}
+
+@enduml
