@@ -16,3 +16,6 @@ Esta estrategia recorre los lanzamientos una única vez, agregando su puntuació
 
 ### Estrategia Cuadrática
 La implementación más naïve, que para cada R2 posible, si es favorable o no, comparando contra cada tiro registrado. Funciona, pero tiene un límite de tamaño dada su elevada complejidad computacional.
+
+### Mejor Estrategia
+Esta implementación analiza la entrada y en función a ella, utiliza la estrategia NlogN o la estrategia Diferencia, tratando de reducir el tiempo de ejecución.

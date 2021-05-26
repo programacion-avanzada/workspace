@@ -10,6 +10,9 @@ package "olivares" {
 		Estrategia <|-- Diferencia
 		Estrategia <|-- NlogN
 		Estrategia <|-- Cuadratica
+		Estrategia <|-- MejorEstrategia
+		Diferencia <--- MejorEstrategia
+		NlogN      <--- MejorEstrategia
 	}
 	Partido o-- Estrategia: -estrategia
 	RuntimeException <|-- LanzamientoNoValido
@@ -37,6 +40,9 @@ class Diferencia {
 	+obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
 }
 class Cuadratica {
+	+obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
+}
+class MejorEstrategia {
 	+obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
 }
 @enduml
