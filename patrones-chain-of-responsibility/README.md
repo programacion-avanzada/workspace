@@ -50,7 +50,7 @@ Chain of Responsibility es un patrón de diseño de comportamiento que te permit
 4. El Cliente puede componer cadenas una sola vez o componerlas dinámicamente, dependiendo de la lógica de la aplicación. Observa que se puede enviar una solicitud a cualquier manejador de la cadena; no tiene por qué ser al primero.
 
 
-![Diagrama](patrones-chain-of-responsibility/diagrama.png?raw=true "Diagrama")
+![Diagrama](diagrama.png)
 
 ### Fuente
 https://refactoring.guru/es/design-patterns/chain-of-responsibility

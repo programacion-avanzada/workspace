@@ -1,15 +1,9 @@
 package edu.unlam.progava.chainofresponsibility;
 
-public class Sumar implements Operacion {
-
-	private Operacion siguiente;
-
-	public void establecerSiguiente(Operacion siguiente) {
-		this.siguiente = siguiente;
-	}
+public class Sumar extends Operacion {
 
 	public int calcular(Pedido pedido) {
-
+		System.out.println("Intentando atender el pedido en Sumar");
 		if (pedido.getTipoDeCalculo().equals("sumar")) {
 			int resultado = pedido.getNumero1() + pedido.getNumero2();
 			System.out.print(pedido.getNumero1() + " + " + pedido.getNumero2());
@@ -20,7 +14,6 @@ public class Sumar implements Operacion {
 			System.out.println("No puedo atenderlo, pasando al " + siguiente);
 			return siguiente.calcular(pedido);
 		}
-
 	}
 
 	@Override

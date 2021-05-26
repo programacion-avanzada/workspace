@@ -1,9 +1,13 @@
 package edu.unlam.progava.chainofresponsibility;
 
-public interface Operacion {
+public abstract class Operacion {
 
-	public void establecerSiguiente(Operacion siguiente);
+	protected Operacion siguiente;
 
-	public int calcular(Pedido pedido);
+	public void establecerSiguiente(Operacion siguiente) {
+		this.siguiente = siguiente;
+	}
+
+	public abstract int calcular(Pedido pedido);
 
 }

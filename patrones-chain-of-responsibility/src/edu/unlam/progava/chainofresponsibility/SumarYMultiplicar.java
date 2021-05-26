@@ -1,16 +1,9 @@
 package edu.unlam.progava.chainofresponsibility;
 
-public class SumaYMultiplicacion implements Operacion {
-
-	private Operacion siguiente;
-
-
-	public void establecerSiguiente(Operacion siguiente) {
-		this.siguiente = siguiente;
-	}
+public class SumarYMultiplicar extends Operacion {
 
 	public int calcular(Pedido pedido) {
-		
+		System.out.println("Intentando atender el pedido en SumarYMultiplicar");
 		if (pedido.getTipoDeCalculo().equals("sym")) {
 			Sumar s = new Sumar();
 			Multiplicar m = new Multiplicar();
