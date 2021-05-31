@@ -1,23 +1,22 @@
 package edu.unlam.progava.olivares;
 
 public class Lanzamiento {
-
-	private int x;
-	private int y;
+	private int distanciaCuadrada;
+	private boolean favorable;
 
 	public Lanzamiento(int x, int y) {
 		if (x == 0) {
 			throw new LanzamientoNoValido("No puede aterrizar sobre la red");
 		}
-		this.x = x;
-		this.y = y;
+		distanciaCuadrada = x * x + y * y;
+		favorable = x > 0;
 	}
 
-	public double getDistancia() {
-		return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
+	public int getDistanciaCuadrado() {
+		return distanciaCuadrada;
 	}
 
 	public boolean esFavorable() {
-		return this.x > 0;
+		return favorable;
 	}
 }

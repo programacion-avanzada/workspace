@@ -7,8 +7,12 @@ package "java.lang" {
 package "olivares" {
 	Partido "1" o-- "*" Lanzamiento: -lanzamientos
 	package "estrategias" {
+		Estrategia <|-- Diferencia
+		Estrategia <|-- NlogN
 		Estrategia <|-- Cuadratica
-		Estrategia <|-- Lineal
+		Estrategia <|-- MejorEstrategia
+		Diferencia <--- MejorEstrategia
+		NlogN      <--- MejorEstrategia
 	}
 	Partido o-- Estrategia: -estrategia
 	RuntimeException <|-- LanzamientoNoValido
@@ -18,7 +22,7 @@ class Lanzamiento {
 	-x: int
 	-y: int
 	+esFavorable(): boolean
-	+getDistancia(): double
+	+getDistanciaCadrado(): double
 }
 class Partido {
 	+agregar(lanzamiento: Lanzamiento): boolean
@@ -29,10 +33,16 @@ abstract class Estrategia {
 	{abstract} +obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
 	#getDistanciaMaxima(lanzamientos: List<Lanzamiento>): double
 }
-class Lineal {
+class NlogN {
+	+obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
+}
+class Diferencia {
 	+obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
 }
 class Cuadratica {
+	+obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
+}
+class MejorEstrategia {
 	+obtenerMejorR2(lanzamientos: List<Lanzamiento>): int
 }
 @enduml

@@ -1,15 +1,14 @@
 package edu.unlam.progava.olivares;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 import edu.unlam.progava.olivares.estrategias.Estrategia;
-import edu.unlam.progava.olivares.estrategias.Cuadratica;
+import edu.unlam.progava.olivares.estrategias.NlogN;
 
 public class Partido {
-
-	private List<Lanzamiento> lanzamientos = new LinkedList<Lanzamiento>();
-	private Estrategia estrategia = new Cuadratica();
+	private List<Lanzamiento> lanzamientos = new ArrayList<Lanzamiento>();
+	private Estrategia estrategia = new NlogN();
 
 	public boolean agregar(Lanzamiento lanzamiento) {
 		return lanzamientos.add(lanzamiento);

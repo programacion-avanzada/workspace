@@ -4,9 +4,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import edu.unlam.progava.olivares.Lanzamiento;
-import edu.unlam.progava.olivares.Partido;
-import edu.unlam.progava.olivares.estrategias.Lineal;
+import edu.unlam.progava.olivares.estrategias.Cuadratica;
+import edu.unlam.progava.olivares.estrategias.Diferencia;
+import edu.unlam.progava.olivares.estrategias.MejorEstrategia;
 
 public class EnunciadoTests {
 
@@ -29,13 +29,25 @@ public class EnunciadoTests {
 	}
 
 	@Test
-	public void estrategiaCuadratica() {
+	public void estrategiaNlogN() {
 		Assert.assertEquals(90, partido.obtenerMejorR2());
 	}
 
 	@Test
-	public void estrategiaLineal() {
-		partido.setEstrategia(new Lineal());
+	public void estrategiaDiferencia() {
+		partido.setEstrategia(new Diferencia());
+		Assert.assertEquals(90, partido.obtenerMejorR2());
+	}
+
+	@Test
+	public void estrategiaCuadratica() {
+		partido.setEstrategia(new Cuadratica());
+		Assert.assertEquals(90, partido.obtenerMejorR2());
+	}
+
+	@Test
+	public void mejorEstrategia() {
+		partido.setEstrategia(new MejorEstrategia());
 		Assert.assertEquals(90, partido.obtenerMejorR2());
 	}
 }
