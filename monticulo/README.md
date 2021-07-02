@@ -4,8 +4,10 @@ Un montículo es un tipo especial de árbol que debe cumplir las siguientes cond
 -	Binario: cada nodo puede tener como máximo dos hijos (hijo izquierdo e hijo derecho).
 -	Completo (o casi completo): cada nivel tiene todos sus nodos, excepto el último que se va llenando de izquierda a derecha.
 -	Propiedad de montículo: si es un montículo de mínimos, cada nodo debe tener un valor menor o igual que el valor de sus hijos; si es un montículo de máximos, cada nodo debe tener un valor mayor o igual que el valor de sus hijos.
-
-![image](https://user-images.githubusercontent.com/70980802/124330659-470a4500-db64-11eb-81f1-e3ac4b94da0c.png)
+-	
+<p align="center"> 
+    ![image](https://user-images.githubusercontent.com/70980802/124330659-470a4500-db64-11eb-81f1-e3ac4b94da0c.png)
+ </p>
  
 # ¿Qué operaciones puede realizarse?
 -	Insertar Nodo: se ubica el nodo a insertar al final del montículo y se verifica que cumpla la propiedad de montículo. Si no se cumple, se intercambia el nodo con su padre hasta que el árbol vuela a cumplir la propiedad.
