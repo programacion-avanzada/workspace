@@ -23,9 +23,9 @@ Ejemplo: se extrae el nodo raíz de un montículo de máximos (30) y se coloca e
 Los montículos se implementan utilizando arrays. En el array, el elemento en la posición 0 representa a la raíz del montículo.
 Siendo i, el i-ésimo nodo del array se puede obtener que:
 
-•	El hijo izquierdo del nodo i se encuentra en: 2*i + 1 (si 2*i + 1 es menor a la longitud del array).
-•	El hijo derecho del nodo i se encuentra en: 2*i + 2 (si 2*i + 2 es menor a la longitud del array).
-•	El padre del nodo i se encuentra en: (i-1)/2 (si i es distinto de 0).
+-	El hijo izquierdo del nodo i se encuentra en: 2*i + 1 (si 2*i + 1 es menor a la longitud del array).
+-	El hijo derecho del nodo i se encuentra en: 2*i + 2 (si 2*i + 2 es menor a la longitud del array).
+-	El padre del nodo i se encuentra en: (i-1)/2 (si i es distinto de 0).
 
 Ejemplo. Para el nodo de valor 12 (i = 3):
 Hijo izquierdo = 2*i + 1 = 2*3 + 1 = 7   nodo de valor 6
