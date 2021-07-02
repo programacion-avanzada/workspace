@@ -27,16 +27,14 @@ Siendo i, el i-ésimo nodo del array se puede obtener que:
 -	El hijo derecho del nodo i se encuentra en: 2*i + 2 (si 2*i + 2 es menor a la longitud del array).
 -	El padre del nodo i se encuentra en: (i-1)/2 (si i es distinto de 0).
 
-Ejemplo. Para el nodo de valor 12 (i = 3):
 
-Hijo izquierdo = 2*i + 1 = 2*3 + 1 = 7 
- nodo de valor 6
+## Ejemplo. Para el nodo de valor 12 (i = 3):
 
-Hijo derecho = 2*i + 2 = 2*3 + 2 = 8 
- nodo de valor 8
+Hijo izquierdo = 2*i + 1 = 2*3 + 1 = 7 -> nodo de valor 6
 
-Padre = (i-1)/2 = (3-1)/2 = 1  
- nodo de valor 18
+Hijo derecho = 2*i + 2 = 2*3 + 2 = 8 -> nodo de valor 8
+
+Padre = (i-1)/2 = (3-1)/2 = 1  -> nodo de valor 18
 
  ![image](https://user-images.githubusercontent.com/70980802/124330691-58535180-db64-11eb-9eb6-35b59c42b138.png)
 
