@@ -1,10 +1,20 @@
 package edu.unlam.progava.colecciones;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
+
+import javax.activation.MailcapCommandMap;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 public class ContandoRepetidos {
 
@@ -16,8 +26,8 @@ public class ContandoRepetidos {
 
 		// Supongamos que tenemos una lista de MVPs en un torneo de fútbol
 
-		String[] mvps = { "Oliver", "Tom", "Benji", "Steve", "Steve", "Oliver",
-				"Oliver", "Bruce", "Benji", "Tom", "Oliver", "Steve" };
+		String[] mvps = { "Oliver", "Tom", "Benji", "Steve", "Steve", "Oliver", "Oliver", "Bruce", "Benji", "Tom",
+				"Oliver", "Steve" };
 
 		// Si quisiéramos saber cuántas veces fue nombrado MVP cada uno,
 		// podríamos contar de la siguiente manera
@@ -28,7 +38,7 @@ public class ContandoRepetidos {
 			// getOrDefault nos ayuda a evitar preguntar por nulos para
 			// los valores no existentes
 			cuenta.put(nombre, cuenta.getOrDefault(nombre, 0) + 1);
-			
+
 			// opción rústica
 //			int cant;
 //			if (!cuenta.containsKey(nombre)) {
