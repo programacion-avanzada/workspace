@@ -34,6 +34,7 @@ Mientras (V-S no este vacio)
  Distancia minima a nodo 4= 60
  
  Y analizando el grafico, llegamos a la misma conclusion:
+ 
  ![image](https://user-images.githubusercontent.com/82003137/124372123-d3009780-dc5e-11eb-81c3-6cfef3169fdc.png)
  ![image](https://user-images.githubusercontent.com/82003137/124372151-0ba07100-dc5f-11eb-98fe-3fb65d9bf3d9.png)
  ![image](https://user-images.githubusercontent.com/82003137/124372158-1bb85080-dc5f-11eb-8505-b49c41450358.png)
