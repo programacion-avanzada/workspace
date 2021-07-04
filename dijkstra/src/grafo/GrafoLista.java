@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Set;
+import java.util.Stack;
 
 public class GrafoLista extends Grafo {
 
@@ -134,6 +135,20 @@ public class GrafoLista extends Grafo {
 		return this.predecesores;
 	}
 	
+	public List <Integer> caminoHastaNodo(int desde, int nodo){
+		List<Integer> lista= new LinkedList <Integer>();
+		Stack <Integer> pila= new Stack <Integer>();
+		pila.add(nodo);
+		while (this.predecesores[nodo] != desde) {
+			pila.add(this.predecesores[nodo]);
+			nodo = this.predecesores[nodo];
+		}
+		pila.add(desde);
+		while (!pila.isEmpty()) {
+			lista.add(pila.pop());
+		}
+		return lista;
+	}
 	
 }
 

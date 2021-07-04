@@ -1,5 +1,8 @@
 package main;
 
+
+import java.util.List;
+
 import grafo.GrafoLista;
 
 public class App {
@@ -19,9 +22,18 @@ public class App {
 		System.out.println(grafo);
 		
 		//Dijkstra nos retorna un vector con las distancias desde el nodo de origen (enviado por parametro) a todos los nodos del grafo
-		double [] distancias = grafo.dijkstra(0);
+		int desde=0;
+		double [] distancias = grafo.dijkstra(desde);
 		for (int i=0; i<distancias.length; i++)
 			System.out.println("Distancia al nodo "+ i+": "+distancias[i]);
+		
+		//Mostramos camino desde el nodo origen hasta el nodo 4
+		int hasta = 4;
+		List<Integer> camino = grafo.caminoHastaNodo(desde, hasta);
+		
+		for (int nroNodo : camino) {
+			System.out.println(nroNodo);
+		}
 	}
 	
 }

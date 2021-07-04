@@ -1,7 +1,5 @@
 package grafo;
 
-import java.util.List;
-import java.util.PriorityQueue;
 
 public abstract class Grafo {
 	
