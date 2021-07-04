@@ -8,18 +8,18 @@ Un grafo es un conjunto de elementos llamados nodos y conexiones entre esos elem
 El grado de un nodo consta de la cantidad de aristas que se encuentran a él.
 
 ## Matriz de adyacencia
-Una matriz de adyacencia es una matriz en donde cada fila representa a un nodo del grafo y las columnas representan un valor o peso de la arista que conecta hacia otro nodo.
+Una matriz de adyacencia es una matriz en donde cada fila representa a un nodo salida una determinada arista y las columnas representan un nodo llegada de la arista, en la posicion (i,j) de dicha matriz, se coloca el costo de la arista.
+Es decir, si en la posicion 1,5 de una matriz de 6x6 tenemos un valor=30, podemos decir que existe una arista desde el nodo 1 al nodo 5, con un costo de 30.
 
 ## Lista de adyacencia
-Una lista de adyacencia es una lista enlazada entre todos los nodos adyacentes. En ella, las
+Una lista de adyacencia es una lista que tiene todos los nodos del grafo. En index de la lista, se crea una nueva lista o una nueva cola de prioridad (para mejorar la complejidad computacional) en la que se agrega cada arista con los siguientes dos parametros: nodoDestino, costoArista.
 
 ## Algoritmos aplicables
 * **Dijkstra**
-Es un algoritmo capaz de conseguir el camino más corto de un nodo a todos los restantes en un grafo.
+
 * **Prim**
-Es un algoritmo que permite encontrar un árbol recubridor mínimo (MST), o sea, permite encontrar un arbol con el menor costo de distancia entre nodos.
+
 * **Kruskal**
-Es un algoritmo que permite encontrar un árbol recubridor mínimo (MST), o sea, permite encontrar un arbol con el menor costo de distancia entre nodos.
 
 * **Floyd**
 
