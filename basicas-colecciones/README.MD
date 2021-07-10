@@ -140,7 +140,7 @@ _Esencialmente es diferente a los `Set` y las `List`. Un mapa tiene forma de dos
 
 
 #### Métodos clave
-* `put(clave,valor);`   //   añade un nuevo par al map.
+* `put(clave,valor);`   //   aÃ±ade un nuevo par al map.
 * `get(clave);`  // recibe una clave y devuelve el valor asociado, si no contiene la clave devuelve null.
 * `getOrDefault(clave, default);`  // recibe una clave y devuelve el valor asociado, si no contiene la clave devuelve el valor enviado como default.
 * `remove(elemento);` // quita un elemento del map, con su valor.
@@ -196,7 +196,39 @@ for (Map.Entry<String, Integer> entrada: mapa.entrySet()) {
 
 _Imagen tomada de Oracle_
 
-## Fuente 📖
+## Ejemplo de colecciones con Objetos!
+ Los ejemplos vistos tambien pueden aplicarse en objetos. Por ejemplo si tenemos una Clase llamada persona: 
+ 
 
-_Esta información está basada en la documentacion oficial del [Java Collections Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)_
+    public class Persona implements Comparable<Persona> {
+
+	private String nombre;
+	private String ciudad;
+	private int edad;
+	private int sueldo;
+
+	public Persona(String identificacion, int anios) {
+		nombre = identificacion;
+		edad = anios;
+	}
+
+- TreeSet: 
+
+    Set<Persona> personasOrdenadas = new TreeSet<Persona>(); 
+	
+
+    personasOrdenadas.add(new Persona("CiudadA", 20));
+    personasOrdenadas.add(new Persona("CiudadB", 21));
+    personasOrdenadas.add(new Persona("CiudadC", 19));
+    
+  En el codigo se adjunta una clase persona Completa, junto a tests para probar el uso de TreeSet con instancias
+  de dicha clase.En el test podemos ver ejemplos de: 
+  A) Ordenamiento Inverso
+  B) Remover Objetos
+  C) Uso de Lambdas
+    
+
+## Fuente ðŸ“–
+
+_Esta informaciÃ³n estÃ¡ basada en la documentacion oficial del [Java Collections Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)_
 
