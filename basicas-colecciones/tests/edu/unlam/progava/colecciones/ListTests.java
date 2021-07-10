@@ -103,7 +103,7 @@ public class ListTests {
 	}
 
 	@Test(expected = IndexOutOfBoundsException.class)
-	public void queNoPuedoAgregarPosicionalmentePorFueraDelTama√() {
+	public void queNoPuedoAgregarPosicionalmentePorFueraDelTama√±o() {
 		Assert.assertEquals(4, lista.size());
 		lista.add(5, "Patricio");
 	}
