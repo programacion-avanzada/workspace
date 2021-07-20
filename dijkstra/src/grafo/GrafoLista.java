@@ -4,10 +4,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
 
-
 public class GrafoLista extends Grafo {
 
-	//grafo implementado sobre una lista de colas de prioridad
+	// grafo implementado sobre una lista de colas de prioridad
 	private List<PriorityQueue<Adyacente>> grafo;
 
 	public GrafoLista(int tamano) {
@@ -28,7 +27,7 @@ public class GrafoLista extends Grafo {
 	public void setArista(int desde, int hasta, double costo, boolean esDirigido) {
 		this.grafo.get(desde).add(new Adyacente(hasta, costo));
 		if (!esDirigido)
-			this.grafo.get(hasta).add(new Adyacente (desde, costo));
+			this.grafo.get(hasta).add(new Adyacente(desde, costo));
 	}
 
 	@Override
@@ -58,33 +57,31 @@ public class GrafoLista extends Grafo {
 	public List<Integer> getNodosAdyacentes(int nodo) {
 		List<Integer> adyacentes = new LinkedList<Integer>();
 		PriorityQueue<Adyacente> aux = new PriorityQueue<Adyacente>(grafo.get(nodo));
-		while(!aux.isEmpty())
+		while (!aux.isEmpty())
 			adyacentes.add(aux.poll().getId());
 		return adyacentes;
 	}
-	
+
 	@Override
-	public List<Adyacente> getAdyacentes( int nodo){
+	public List<Adyacente> getAdyacentes(int nodo) {
 		List<Adyacente> adyacentes = new LinkedList<Adyacente>();
 		PriorityQueue<Adyacente> aux = new PriorityQueue<Adyacente>(grafo.get(nodo));
-		while(!aux.isEmpty())
+		while (!aux.isEmpty())
 			adyacentes.add(aux.poll());
 		return adyacentes;
 	}
-	
+
 	@Override
-	public List<Arista> getAristas(){
-		List<Arista> aristas = new LinkedList <Arista>();
-		for (int i=0; i<this.grafo.size(); i++) {
-			PriorityQueue<Adyacente> colaAux = new PriorityQueue<Adyacente> (this.grafo.get(i));
-			while(!colaAux.isEmpty()) {
+	public List<Arista> getAristas() {
+		List<Arista> aristas = new LinkedList<Arista>();
+		for (int i = 0; i < this.grafo.size(); i++) {
+			PriorityQueue<Adyacente> colaAux = new PriorityQueue<Adyacente>(this.grafo.get(i));
+			while (!colaAux.isEmpty()) {
 				Adyacente aux = colaAux.poll();
-				aristas.add(new Arista(i,aux.getId(), aux.getPeso()));
+				aristas.add(new Arista(i, aux.getId(), aux.getPeso()));
 			}
 		}
 		return aristas;
 	}
-	
+
 }
-
-

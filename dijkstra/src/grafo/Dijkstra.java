@@ -12,15 +12,15 @@ public class Dijkstra {
 	private int nodoInicial;
 	private int[] predecesores;
 	private double[] distancias;
-	private Set<Integer> s =new HashSet<Integer>();
-	private Set<Integer> vMenosS = new HashSet <Integer>();
-	
-	public Dijkstra (Grafo grafo, int nodoInicial) {
+	private Set<Integer> s = new HashSet<Integer>();
+	private Set<Integer> vMenosS = new HashSet<Integer>();
+
+	public Dijkstra(Grafo grafo, int nodoInicial) {
 		this.grafo = grafo;
 		this.nodoInicial = nodoInicial;
 		calcularDijkstra(this.nodoInicial);
 	}
-	
+
 	private void calcularDijkstra(int desde) {
 		this.distancias = new double[grafo.getNodos()];
 		this.predecesores = new int[grafo.getNodos()];
@@ -50,7 +50,7 @@ public class Dijkstra {
 		// Primer paso: se carga en distancias todas las distancias a nodos directos
 		// desde el nodo inicial
 
-		List <Adyacente> adyacentes = this.grafo.getAdyacentes(desde);
+		List<Adyacente> adyacentes = this.grafo.getAdyacentes(desde);
 		for (Adyacente adyacente : adyacentes) {
 			distancias[adyacente.getId()] = adyacente.getPeso();
 		}
@@ -94,18 +94,18 @@ public class Dijkstra {
 		}
 
 	}
-	
+
 	public int[] getPredecesores() {
 		return this.predecesores;
 	}
-	
+
 	public double[] getDistancias() {
 		return this.distancias;
 	}
-	
-	public List <Integer> obtenerCamino (int nodo){
-		List<Integer> lista= new LinkedList <Integer>();
-		Stack <Integer> pila= new Stack <Integer>();
+
+	public List<Integer> obtenerCamino(int nodo) {
+		List<Integer> lista = new LinkedList<Integer>();
+		Stack<Integer> pila = new Stack<Integer>();
 		pila.add(nodo);
 		while (this.predecesores[nodo] != this.nodoInicial) {
 			pila.add(this.predecesores[nodo]);
@@ -117,7 +117,7 @@ public class Dijkstra {
 		}
 		return lista;
 	}
-	
+
 	public double getDistancia(int nodo) {
 		return this.distancias[nodo];
 	}
